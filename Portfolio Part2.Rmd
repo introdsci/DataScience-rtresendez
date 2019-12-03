@@ -1,0 +1,137 @@
+---
+title: "Portfolio Project Part 2"
+author: "Reece Resendez"
+date: "12/2/2019"
+output: html_document
+---
+
+## Migration of the First Part.
+1. Create a function that will compile and source the first part of this portfolio project.
+2. Include all the needed libraries for both the first part as well as the second part.
+
+```{r echo=FALSE, message=FALSE, error=FALSE, warning=FALSE, results='hide'}
+include <- function(library_name){
+  if( !(library_name %in% installed.packages()) )
+    install.packages(library_name) 
+  library(library_name, character.only=TRUE)
+}
+include("tidyverse")
+include("dplyr")
+include("knitr")
+include("caret")
+library("methods")
+#purl("Portfolio.Rmd", output = "part1.r")
+#source("part1.r")
+```
+
+## Import New Datasets.
+
+This step is very basic in that we are using the URL's to our datasets and then reading them into a dataset to be used for manipulation.
+
+
+```{r echo=TRUE, message=FALSE, error=FALSE, warning=FALSE, results='hide'}
+Employment <- read_csv("https://raw.githubusercontent.com/introdsci/DataScience-rtresendez/part2/datasets/Employment_2.csv")
+
+Education <- read_csv("https://raw.githubusercontent.com/introdsci/DataScience-rtresendez/part2/datasets/Concentrations.csv")
+
+```
+
+## Data Cleanup.
+
+Here we want to comb through the data and ensure that our column names are neat organized, and unique. We will go ahead and rename only the columns whose names are seperated and longer than needed.
+```{r}
+#First we will start with the Employment Dataset.
+colnames(Employment)[colnames(Employment) ==   "Area Type"] <- "Area_Type"
+colnames(Employment)[colnames(Employment) ==   "Area Name"] <- "Area_Name"
+colnames(Employment)[colnames(Employment) ==   "Status (Preliminary / Final)"] <- "Status"
+colnames(Employment)[colnames(Employment) ==   "Labor Force"] <- "Labor_Force"
+colnames(Employment)[colnames(Employment) ==   "Unemployment Rate"] <- "Unemployment_rt"
+#We will also remove the 6th column of our data which is wheather the numbers were seasonally adjusted. Since this value is always constant we will remove it.
+Employment <- Employment[ -c(6)]
+head(summary(Employment))
+
+#Now We will tidy up the Education Dataset
+colnames(Education)[colnames(Education) ==   "ID CIP2"] <- "CIP2_ID"
+colnames(Education)[colnames(Education) ==   "ID CIP4"] <- "CIP4_ID"
+colnames(Education)[colnames(Education) ==   "ID CIP6"] <- "CIP6_ID"
+colnames(Education)[colnames(Education) ==   "ID CIP2"] <- "CIP2_ID"
+Education <- Education[ -c(7,9,11,13,16,18,19)]
+Education <- Education[-c(359),]
+head(summary(Education))
+
+```
+#### Variable Definitions for Employment:
+
+* Area_Type -- Subregion type for the given data
+* Area_Name -- Subregion type and name for given data
+* Date -- Time to which the data is referring
+* Year -- Year to which the data is referring
+* Month -- Month at which the data is referring
+* Status -- Current Status of data collection
+* Labor_Force -- Numerical representation for how many people are working in a given field.
+* Employment -- Numerical represenation for how many people are working within the labor force
+* Unemployment -- Numerical representation for how many people are not working within the labor force
+* Unemployment_rt -- Ratio of employed and unemployed people within a given labor force
+
+---
+
+#### Variable Definitions for Education:
+
+* CIP2_ID -- Numerical value for Classification of Instructional Programs
+* CIP2 -- Broadest Classification of an education subcategory
+* CIP4_ID -- Numerical value for first specific educational discipline
+* CIP4 -- Categorical value for first specific educational discipline
+* CIP6_ID -- Numerical value for second specific educational discipline
+* CIP6 -- Categorical value for second educational discipline
+* Year -- Year for which tghe data is referring to
+* Nation -- Country from which the data was collected
+* State -- Subregion for which the data is referring to
+* Degree -- Academic degree associated with the CIP's in question.
+* Completions -- Numerical value for how many people completed the degree
+* Geography -- Subregion within the state for where the data is referring to
+
+
+## Data Manipulation and Models
+In this section we will go over a few different ideas for finding models that give us insightful information about our given datasets.
+
+First we want to look at the current trend of Employment and how it has changed over the years. This will give us a general idea of how not only population is changing but as well as if the labor force is rising. In addition, we want to make sure we are also looking at the Unemployment rate particularly because it gives us the raw values as a percentage which will be comparable regardless of labor force size.
+```{r}
+
+##Make a Graph that shows the growth of labor throughout the years as well as the rate
+  P <- ggplot(data=Employment) + geom_point(aes(x=Year, y=Employment,color = Month))
+  P2 <- ggplot(data=Employment) + geom_line(aes(x=Year,y=Unemployment_rt))
+  P
+  P2
+```
+
+The second graph we want to look at it is how the completion of degress has changed in Butte county throughout the years. This will give us an idea of how many people are following through with their education.
+
+```{r}
+
+##Make a graph that shows the change in completed degress regardless of CIP
+
+P3 <- ggplot(data=Education) + geom_point(aes(x=Year,y=Completions, color=Year))
+P3
+
+```
+
+Finally we want to compare the results of these two models and see if there is anything that will lead us to believe that completion of degress has an effect on the employed labor force and if the labor force is also increasing with more educated people.
+
+```{r}
+model <- lm(data=Education, formula= Completions~Employment$Labor_Force+Employment$Unemployment+Employment$Unemployment_rt)
+
+prediction <- predict(model)
+summary(model)
+
+summary(prediction)
+
+
+```
+Looking at the results of this prediction we can see that the resulting P value from our model does not lead us to believe that there is any correlation between the Completed number of degress and the current amount of people in the work force.
+
+I believe that this result comes from some limitations of the data as well as limitations of knowledge. This data is very consice but it does not contain information that directly relates to population or other outside factors which will effect the amount of people working.
+
+In addtion, this model on takes into account education and employment within Butte county. Since Butte county has two facilities for education it is not hard to believe that the numbers are skewed due to the fact that most educated individuals leave once they have completed their degree.
+
+Overall I believe that there may be underlying correlations that exists that need to be explored further. An idea of where to go next would be to look at other hot spots in the country and see what the education and population looks like for those areas and compare their ratios to other regions.
+
