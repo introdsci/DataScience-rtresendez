@@ -1,0 +1,1257 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "7jre-xmyp",
+      "name" : "Local Area Unemployment Statistics (LAUS) - Butte County",
+      "attribution" : "EDD - Labor Market Information Division",
+      "attributionLink" : "http://www.labormarketinfo.edd.ca.gov/",
+      "averageRating" : 0,
+      "category" : "Labor Force and Unemployment Rates",
+      "createdAt" : 1498859745,
+      "description" : "The Local Area Unemployment Statistics (LAUS) program is a Federal-State cooperative effort in which monthly estimates of total employment and unemployment are prepared for approximately 7,300 areas, including counties, cities and metropolitan statistical areas. These estimates are key indicators of local economic conditions. The Bureau of Labor Statistics (BLS) of the U.S. Department of Labor is responsible for the concepts, definitions, technical procedures, validation, and publication of the estimates that State employment security agencies prepare under agreement with BLS. Estimates for the remainder of the substate labor market areas are produced through a building-block approach known as the \"Handbook method.\" This procedure also uses data from several sources, including the CPS, the CES program, State UI systems, and the decennial census, to create estimates that are adjusted to the statewide measures of employment and unemployment. Below the labor market area level, estimates are prepared using disaggregation techniques based on inputs from the decennial census, annual population estimates, and current UI data",
+      "displayType" : "table",
+      "downloadCount" : 86,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "indexUpdatedAt" : 1574277367,
+      "licenseId" : "PUBLIC_DOMAIN",
+      "newBackend" : true,
+      "numberOfComments" : 0,
+      "oid" : 30428038,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1503087359,
+      "publicationGroup" : 9248478,
+      "publicationStage" : "published",
+      "rowsUpdatedAt" : 1574277367,
+      "rowsUpdatedBy" : "fx2x-5u9v",
+      "tableId" : 15800453,
+      "totalTimesRated" : 0,
+      "viewCount" : 695,
+      "viewLastModified" : 1551724786,
+      "viewType" : "tabular",
+      "approvals" : [ {
+        "reviewedAt" : 1498859745,
+        "reviewedAutomatically" : true,
+        "state" : "approved",
+        "submissionId" : 793600,
+        "submissionObject" : "public_audience_request",
+        "submissionOutcome" : "change_audience",
+        "submittedAt" : 1498859745,
+        "workflowId" : 2168,
+        "submissionDetails" : {
+          "permissionType" : "READ"
+        },
+        "submissionOutcomeApplication" : {
+          "failureCount" : 0,
+          "status" : "success"
+        },
+        "submitter" : {
+          "id" : "fx2x-5u9v",
+          "displayName" : "EDD Administrator"
+        }
+      } ],
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 388856180,
+        "name" : "Area Type ",
+        "dataTypeName" : "text",
+        "description" : "The type of geographic area: California-Statewide, County, Metropolitan Area, Local Workforce Development Area, Sub-county places, Regional Planning Units, ",
+        "fieldName" : "area_type",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 35193533,
+        "width" : 58,
+        "cachedContents" : {
+          "largest" : "County",
+          "null" : "0",
+          "top" : [ {
+            "item" : "County",
+            "count" : "358"
+          } ],
+          "not_null" : "358",
+          "smallest" : "County",
+          "cardinality" : "1"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "left"
+        }
+      }, {
+        "id" : 388856181,
+        "name" : "Area Name ",
+        "dataTypeName" : "text",
+        "description" : "The official name of the geographic area.",
+        "fieldName" : "area_name",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 35193532,
+        "width" : 122,
+        "cachedContents" : {
+          "largest" : "Butte County",
+          "null" : "0",
+          "top" : [ {
+            "item" : "Butte County",
+            "count" : "358"
+          } ],
+          "not_null" : "358",
+          "smallest" : "Butte County",
+          "cardinality" : "1"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "left"
+        }
+      }, {
+        "id" : 388856182,
+        "name" : "Date",
+        "dataTypeName" : "calendar_date",
+        "description" : "Numeric day, month, and year for the reported data.",
+        "fieldName" : "date",
+        "position" : 3,
+        "renderTypeName" : "calendar_date",
+        "tableColumnId" : 35193536,
+        "width" : 76,
+        "cachedContents" : {
+          "largest" : "2019-10-01T00:00:00.000",
+          "null" : "0",
+          "top" : [ {
+            "item" : "2014-07-01T00:00:00.000",
+            "count" : "1"
+          }, {
+            "item" : "2002-05-01T00:00:00.000",
+            "count" : "1"
+          }, {
+            "item" : "2001-03-01T00:00:00.000",
+            "count" : "1"
+          }, {
+            "item" : "2019-03-01T00:00:00.000",
+            "count" : "1"
+          }, {
+            "item" : "2006-12-01T00:00:00.000",
+            "count" : "1"
+          }, {
+            "item" : "1992-07-01T00:00:00.000",
+            "count" : "1"
+          }, {
+            "item" : "2016-02-01T00:00:00.000",
+            "count" : "1"
+          }, {
+            "item" : "2018-08-01T00:00:00.000",
+            "count" : "1"
+          }, {
+            "item" : "1990-10-01T00:00:00.000",
+            "count" : "1"
+          }, {
+            "item" : "1991-01-01T00:00:00.000",
+            "count" : "1"
+          }, {
+            "item" : "2015-06-01T00:00:00.000",
+            "count" : "1"
+          }, {
+            "item" : "1990-01-01T00:00:00.000",
+            "count" : "1"
+          }, {
+            "item" : "2012-01-01T00:00:00.000",
+            "count" : "1"
+          }, {
+            "item" : "2011-07-01T00:00:00.000",
+            "count" : "1"
+          }, {
+            "item" : "1995-11-01T00:00:00.000",
+            "count" : "1"
+          }, {
+            "item" : "1996-04-01T00:00:00.000",
+            "count" : "1"
+          }, {
+            "item" : "2012-08-01T00:00:00.000",
+            "count" : "1"
+          }, {
+            "item" : "2017-12-01T00:00:00.000",
+            "count" : "1"
+          }, {
+            "item" : "1999-02-01T00:00:00.000",
+            "count" : "1"
+          }, {
+            "item" : "2004-11-01T00:00:00.000",
+            "count" : "1"
+          } ],
+          "not_null" : "358",
+          "smallest" : "1990-01-01T00:00:00.000",
+          "cardinality" : "358"
+        },
+        "format" : {
+          "view" : "date",
+          "align" : "left"
+        }
+      }, {
+        "id" : 388856183,
+        "name" : "Year ",
+        "dataTypeName" : "number",
+        "description" : "The referenced 4-digit calendar year",
+        "fieldName" : "year",
+        "position" : 4,
+        "renderTypeName" : "number",
+        "tableColumnId" : 35193534,
+        "width" : 52,
+        "cachedContents" : {
+          "largest" : "2019",
+          "null" : "0",
+          "top" : [ {
+            "item" : "2000",
+            "count" : "12"
+          }, {
+            "item" : "1999",
+            "count" : "12"
+          }, {
+            "item" : "2014",
+            "count" : "12"
+          }, {
+            "item" : "2005",
+            "count" : "12"
+          }, {
+            "item" : "2002",
+            "count" : "12"
+          }, {
+            "item" : "1992",
+            "count" : "12"
+          }, {
+            "item" : "1998",
+            "count" : "12"
+          }, {
+            "item" : "2017",
+            "count" : "12"
+          }, {
+            "item" : "1995",
+            "count" : "12"
+          }, {
+            "item" : "2015",
+            "count" : "12"
+          }, {
+            "item" : "2010",
+            "count" : "12"
+          }, {
+            "item" : "2004",
+            "count" : "12"
+          }, {
+            "item" : "2012",
+            "count" : "12"
+          }, {
+            "item" : "1996",
+            "count" : "12"
+          }, {
+            "item" : "1991",
+            "count" : "12"
+          }, {
+            "item" : "2016",
+            "count" : "12"
+          }, {
+            "item" : "2009",
+            "count" : "12"
+          }, {
+            "item" : "2006",
+            "count" : "12"
+          }, {
+            "item" : "1993",
+            "count" : "12"
+          }, {
+            "item" : "2013",
+            "count" : "12"
+          } ],
+          "not_null" : "358",
+          "smallest" : "1990",
+          "cardinality" : "30"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "true",
+          "align" : "left"
+        }
+      }, {
+        "id" : 388856184,
+        "name" : "Month",
+        "dataTypeName" : "text",
+        "description" : "Calendar month",
+        "fieldName" : "month",
+        "position" : 5,
+        "renderTypeName" : "text",
+        "tableColumnId" : 35193535,
+        "width" : 59,
+        "cachedContents" : {
+          "largest" : "September",
+          "null" : "0",
+          "top" : [ {
+            "item" : "August",
+            "count" : "30"
+          }, {
+            "item" : "June",
+            "count" : "30"
+          }, {
+            "item" : "September",
+            "count" : "30"
+          }, {
+            "item" : "July",
+            "count" : "30"
+          }, {
+            "item" : "April",
+            "count" : "30"
+          }, {
+            "item" : "January",
+            "count" : "30"
+          }, {
+            "item" : "March",
+            "count" : "30"
+          }, {
+            "item" : "February",
+            "count" : "30"
+          }, {
+            "item" : "May",
+            "count" : "30"
+          }, {
+            "item" : "October",
+            "count" : "30"
+          }, {
+            "item" : "November",
+            "count" : "29"
+          }, {
+            "item" : "December",
+            "count" : "29"
+          } ],
+          "not_null" : "358",
+          "smallest" : "April",
+          "cardinality" : "12"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "left"
+        }
+      }, {
+        "id" : 388856185,
+        "name" : "Seasonally Adjusted (Y/N) ",
+        "dataTypeName" : "text",
+        "description" : "Seasonal changes have been removed or discounted. (Y/N)",
+        "fieldName" : "seasonally_adjusted_y_n",
+        "position" : 6,
+        "renderTypeName" : "text",
+        "tableColumnId" : 35193537,
+        "width" : 117,
+        "cachedContents" : {
+          "largest" : "N",
+          "null" : "0",
+          "top" : [ {
+            "item" : "N",
+            "count" : "358"
+          } ],
+          "not_null" : "358",
+          "smallest" : "N",
+          "cardinality" : "1"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "left"
+        }
+      }, {
+        "id" : 388856186,
+        "name" : "Status (Preliminary / Final) ",
+        "dataTypeName" : "text",
+        "description" : "Current month data typically preliminary and is subject to revision, all others final and not subject to change. ",
+        "fieldName" : "status_preliminary_final",
+        "position" : 7,
+        "renderTypeName" : "text",
+        "tableColumnId" : 35193538,
+        "width" : 173,
+        "cachedContents" : {
+          "largest" : "Preliminary",
+          "null" : "0",
+          "top" : [ {
+            "item" : "Final",
+            "count" : "357"
+          }, {
+            "item" : "Preliminary",
+            "count" : "1"
+          } ],
+          "not_null" : "358",
+          "smallest" : "Final",
+          "cardinality" : "2"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "left"
+        }
+      }, {
+        "id" : 388856187,
+        "name" : "Labor Force",
+        "dataTypeName" : "number",
+        "description" : "Civilian labor force",
+        "fieldName" : "labor_force",
+        "position" : 8,
+        "renderTypeName" : "number",
+        "tableColumnId" : 35193539,
+        "width" : 122,
+        "cachedContents" : {
+          "largest" : "104900",
+          "null" : "0",
+          "top" : [ {
+            "item" : "101000",
+            "count" : "10"
+          }, {
+            "item" : "101300",
+            "count" : "10"
+          }, {
+            "item" : "101700",
+            "count" : "8"
+          }, {
+            "item" : "100900",
+            "count" : "8"
+          }, {
+            "item" : "100800",
+            "count" : "6"
+          }, {
+            "item" : "102300",
+            "count" : "6"
+          }, {
+            "item" : "103100",
+            "count" : "6"
+          }, {
+            "item" : "102500",
+            "count" : "6"
+          }, {
+            "item" : "101200",
+            "count" : "6"
+          }, {
+            "item" : "101400",
+            "count" : "6"
+          }, {
+            "item" : "102800",
+            "count" : "5"
+          }, {
+            "item" : "101500",
+            "count" : "5"
+          }, {
+            "item" : "101900",
+            "count" : "5"
+          }, {
+            "item" : "101800",
+            "count" : "5"
+          }, {
+            "item" : "98400",
+            "count" : "5"
+          }, {
+            "item" : "101100",
+            "count" : "4"
+          }, {
+            "item" : "102100",
+            "count" : "4"
+          }, {
+            "item" : "97800",
+            "count" : "4"
+          }, {
+            "item" : "102700",
+            "count" : "4"
+          }, {
+            "item" : "97900",
+            "count" : "4"
+          } ],
+          "not_null" : "358",
+          "smallest" : "76800",
+          "cardinality" : "158"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "left"
+        }
+      }, {
+        "id" : 388856188,
+        "name" : "Employment ",
+        "dataTypeName" : "number",
+        "description" : "The proportion of the civilian noninstitutional population aged 16 years and over that is employed.",
+        "fieldName" : "employment",
+        "position" : 9,
+        "renderTypeName" : "number",
+        "tableColumnId" : 35193540,
+        "width" : 108,
+        "cachedContents" : {
+          "largest" : "100500",
+          "null" : "0",
+          "top" : [ {
+            "item" : "91500",
+            "count" : "6"
+          }, {
+            "item" : "91700",
+            "count" : "6"
+          }, {
+            "item" : "90200",
+            "count" : "5"
+          }, {
+            "item" : "90600",
+            "count" : "5"
+          }, {
+            "item" : "90500",
+            "count" : "5"
+          }, {
+            "item" : "89400",
+            "count" : "4"
+          }, {
+            "item" : "90700",
+            "count" : "4"
+          }, {
+            "item" : "94900",
+            "count" : "4"
+          }, {
+            "item" : "87800",
+            "count" : "4"
+          }, {
+            "item" : "94800",
+            "count" : "4"
+          }, {
+            "item" : "76000",
+            "count" : "4"
+          }, {
+            "item" : "89700",
+            "count" : "4"
+          }, {
+            "item" : "95600",
+            "count" : "4"
+          }, {
+            "item" : "89800",
+            "count" : "4"
+          }, {
+            "item" : "72900",
+            "count" : "4"
+          }, {
+            "item" : "93800",
+            "count" : "4"
+          }, {
+            "item" : "88600",
+            "count" : "3"
+          }, {
+            "item" : "88700",
+            "count" : "3"
+          }, {
+            "item" : "94600",
+            "count" : "3"
+          }, {
+            "item" : "94200",
+            "count" : "3"
+          } ],
+          "not_null" : "358",
+          "smallest" : "69100",
+          "cardinality" : "197"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "left"
+        }
+      }, {
+        "id" : 388856189,
+        "name" : "Unemployment ",
+        "dataTypeName" : "number",
+        "description" : "Comprises all civilians 16 years and over who did not work during the survey week, who made specific efforts to find a job within the past four weeks, and who were available for work (except for temporary illness) during the survey week. ",
+        "fieldName" : "unemployment",
+        "position" : 10,
+        "renderTypeName" : "number",
+        "tableColumnId" : 35193541,
+        "width" : 127,
+        "cachedContents" : {
+          "largest" : "15300",
+          "null" : "0",
+          "top" : [ {
+            "item" : "7300",
+            "count" : "14"
+          }, {
+            "item" : "6800",
+            "count" : "11"
+          }, {
+            "item" : "8700",
+            "count" : "10"
+          }, {
+            "item" : "6300",
+            "count" : "10"
+          }, {
+            "item" : "6900",
+            "count" : "10"
+          }, {
+            "item" : "6100",
+            "count" : "10"
+          }, {
+            "item" : "6700",
+            "count" : "10"
+          }, {
+            "item" : "7000",
+            "count" : "9"
+          }, {
+            "item" : "6600",
+            "count" : "9"
+          }, {
+            "item" : "7100",
+            "count" : "9"
+          }, {
+            "item" : "6200",
+            "count" : "9"
+          }, {
+            "item" : "7700",
+            "count" : "8"
+          }, {
+            "item" : "7400",
+            "count" : "8"
+          }, {
+            "item" : "6000",
+            "count" : "8"
+          }, {
+            "item" : "8500",
+            "count" : "8"
+          }, {
+            "item" : "7600",
+            "count" : "7"
+          }, {
+            "item" : "5700",
+            "count" : "6"
+          }, {
+            "item" : "8400",
+            "count" : "6"
+          }, {
+            "item" : "8100",
+            "count" : "6"
+          }, {
+            "item" : "7500",
+            "count" : "6"
+          } ],
+          "not_null" : "358",
+          "smallest" : "3800",
+          "cardinality" : "95"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "left"
+        }
+      }, {
+        "id" : 388856190,
+        "name" : "Unemployment Rate ",
+        "dataTypeName" : "number",
+        "description" : "The unemployment rate represents the number unemployed as a percent of the labor force.",
+        "fieldName" : "unemployment_rate",
+        "position" : 11,
+        "renderTypeName" : "number",
+        "tableColumnId" : 35193542,
+        "width" : 151,
+        "cachedContents" : {
+          "largest" : "0.152",
+          "null" : "0",
+          "top" : [ {
+            "item" : "0.059",
+            "count" : "12"
+          }, {
+            "item" : "0.07",
+            "count" : "11"
+          }, {
+            "item" : "0.071",
+            "count" : "9"
+          }, {
+            "item" : "0.072",
+            "count" : "9"
+          }, {
+            "item" : "0.089",
+            "count" : "9"
+          }, {
+            "item" : "0.069",
+            "count" : "8"
+          }, {
+            "item" : "0.08",
+            "count" : "8"
+          }, {
+            "item" : "0.064",
+            "count" : "8"
+          }, {
+            "item" : "0.062",
+            "count" : "7"
+          }, {
+            "item" : "0.067",
+            "count" : "7"
+          }, {
+            "item" : "0.052",
+            "count" : "7"
+          }, {
+            "item" : "0.086",
+            "count" : "6"
+          }, {
+            "item" : "0.075",
+            "count" : "6"
+          }, {
+            "item" : "0.074",
+            "count" : "6"
+          }, {
+            "item" : "0.104",
+            "count" : "6"
+          }, {
+            "item" : "0.076",
+            "count" : "6"
+          }, {
+            "item" : "0.06",
+            "count" : "6"
+          }, {
+            "item" : "0.129",
+            "count" : "6"
+          }, {
+            "item" : "0.079",
+            "count" : "6"
+          }, {
+            "item" : "0.063",
+            "count" : "6"
+          } ],
+          "not_null" : "358",
+          "smallest" : "0.037",
+          "cardinality" : "105"
+        },
+        "format" : {
+          "percentScale" : "1",
+          "precisionStyle" : "percentage",
+          "view" : "percent_bar_and_text",
+          "noCommas" : "false",
+          "align" : "center"
+        }
+      } ],
+      "grants" : [ {
+        "inherited" : true,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "license" : {
+        "name" : "Public Domain"
+      },
+      "metadata" : {
+        "rdfSubject" : "0",
+        "custom_fields" : {
+          "Dataset Summary" : {
+            "Posting Frequency" : "Monthly",
+            "Organization" : "Employment Development Department ",
+            "Time Period" : "1976 - Present",
+            "Glossary of Terms" : "http://www.labormarketinfo.edd.ca.gov/LMID/Glossary_of_Terms.html",
+            "Publisher" : "EDD-Labor Market Information Division ",
+            "Dataset Owner" : "BLS",
+            "Data Frequency" : "Monthly",
+            "Geographic Areas" : "California-Statewide, County, Metropolitan Area, Local Workforce Development Area, Census Designated Place"
+          },
+          "Disclaimers" : {
+            "Limitations" : "Civilian labor force data do not include military, prison inmate, or other institutional populations"
+          },
+          "Notes" : {
+            "Notes" : "The Bureau of Labor Statistics (BLS) of the U.S. Department of Labor is responsible for the concepts, definitions, technical procedures, validation, and publication of the estimates that state workforce agencies prepare under agreement with BLS."
+          }
+        },
+        "rowLabel" : "Row",
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        }
+      },
+      "owner" : {
+        "id" : "fx2x-5u9v",
+        "displayName" : "EDD Administrator",
+        "screenName" : "EDD Administrator",
+        "type" : "interactive",
+        "userSegment" : "site_member",
+        "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+      },
+      "query" : {
+        "filterCondition" : {
+          "type" : "operator",
+          "value" : "AND",
+          "children" : [ {
+            "type" : "operator",
+            "value" : "OR",
+            "children" : [ {
+              "type" : "operator",
+              "value" : "EQUALS",
+              "children" : [ {
+                "columnId" : 388856181,
+                "type" : "column"
+              }, {
+                "type" : "literal",
+                "value" : "Butte County"
+              } ],
+              "metadata" : {
+                "freeform" : true
+              }
+            } ],
+            "metadata" : {
+              "tableColumnId" : {
+                "9248478" : 35193532
+              },
+              "operator" : "EQUALS"
+            }
+          } ],
+          "metadata" : {
+            "unifiedVersion" : 2
+          }
+        },
+        "orderBys" : [ {
+          "ascending" : false,
+          "expression" : {
+            "columnId" : 388856182,
+            "type" : "column"
+          }
+        }, {
+          "ascending" : true,
+          "expression" : {
+            "columnId" : 388856180,
+            "type" : "column"
+          }
+        }, {
+          "ascending" : true,
+          "expression" : {
+            "columnId" : 388856181,
+            "type" : "column"
+          }
+        } ]
+      },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "hkvr-def7",
+        "displayName" : "Administrator",
+        "profileImageUrlLarge" : "/api/users/hkvr-def7/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/hkvr-def7/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/hkvr-def7/profile_images/TINY",
+        "screenName" : "Administrator",
+        "type" : "interactive",
+        "userSegment" : "community_user"
+      },
+      "tags" : [ "santa clara", "employment", "unemployment", "unemployment rate", "labor force", "local area unemployment statistics", "local area employment statistics", "laus", "bls", "labor statistics" ],
+      "flags" : [ "restorable", "restorePossibleForType" ]
+    }
+  },
+  "data" : [ [ "row-wsnx-k58w_yvyq", "00000000-0000-0000-853E-A73DDD01777C", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1990-01-01T00:00:00", "1990", "January", "N", "Final", "76800", "69400", "7400", "0.096" ]
+, [ "row-hqr6~edvj~qihk", "00000000-0000-0000-53C6-ECA0BE532774", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1991-01-01T00:00:00", "1991", "January", "N", "Final", "78900", "70400", "8500", "0.108" ]
+, [ "row-6aw7-ey4a.9hxt", "00000000-0000-0000-395E-2BC3C660776D", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1992-01-01T00:00:00", "1992", "January", "N", "Final", "79600", "69900", "9700", "0.122" ]
+, [ "row-529m_62a3.bryb", "00000000-0000-0000-6183-A902798B18A4", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1993-01-01T00:00:00", "1993", "January", "N", "Final", "80600", "69200", "11400", "0.142" ]
+, [ "row-t4m5_8m48.ud8f", "00000000-0000-0000-E2F3-6C7104659FEA", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1994-01-01T00:00:00", "1994", "January", "N", "Final", "79800", "69500", "10300", "0.13" ]
+, [ "row-uheg~jny5~2n5g", "00000000-0000-0000-E741-B869CB1E14E2", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1995-01-01T00:00:00", "1995", "January", "N", "Final", "81200", "71700", "9500", "0.117" ]
+, [ "row-6fcw~zw3w.5gfc", "00000000-0000-0000-8C60-A32607C589B2", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1996-01-01T00:00:00", "1996", "January", "N", "Final", "79900", "70900", "9000", "0.113" ]
+, [ "row-xdwn.dncw~ztvn", "00000000-0000-0000-192A-A4C7E2DE41E9", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1997-01-01T00:00:00", "1997", "January", "N", "Final", "82800", "74100", "8700", "0.104" ]
+, [ "row-8uxx-7ayq~2usi", "00000000-0000-0000-0C5B-7468DD168182", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1998-01-01T00:00:00", "1998", "January", "N", "Final", "83600", "74900", "8700", "0.104" ]
+, [ "row-5vyx.ib8j.9h43", "00000000-0000-0000-EF72-CC981F023785", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1999-01-01T00:00:00", "1999", "January", "N", "Final", "83700", "76600", "7100", "0.085" ]
+, [ "row-qny5~tyfs-ani2", "00000000-0000-0000-E510-E695FDBDBE8A", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2000-01-01T00:00:00", "2000", "January", "N", "Final", "90900", "84600", "6300", "0.069" ]
+, [ "row-wqmq_8bca-gsw6", "00000000-0000-0000-AEAE-1322D88D1ACB", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2001-01-01T00:00:00", "2001", "January", "N", "Final", "93500", "86500", "7000", "0.075" ]
+, [ "row-bcya_tx8a_znpa", "00000000-0000-0000-CF6B-DC5C0C77FFA9", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2002-01-01T00:00:00", "2002", "January", "N", "Final", "95200", "87200", "8000", "0.084" ]
+, [ "row-nc96.v4e8~ex3c", "00000000-0000-0000-15E7-9658452F6DE5", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2003-01-01T00:00:00", "2003", "January", "N", "Final", "97900", "89400", "8600", "0.087" ]
+, [ "row-gbwu-58uk_patj", "00000000-0000-0000-F341-BF34F4EEF1FC", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2004-01-01T00:00:00", "2004", "January", "N", "Final", "96400", "87800", "8600", "0.089" ]
+, [ "row-5tzn.ke72.6nuj", "00000000-0000-0000-7918-DFD794FF49AF", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2005-01-01T00:00:00", "2005", "January", "N", "Final", "97400", "89700", "7800", "0.08" ]
+, [ "row-nfxr~247t_r6kd", "00000000-0000-0000-65AD-02B19759C722", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2006-01-01T00:00:00", "2006", "January", "N", "Final", "98100", "91100", "7000", "0.071" ]
+, [ "row-id7d_ijxi_hvka", "00000000-0000-0000-DF77-C3C124312387", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2007-01-01T00:00:00", "2007", "January", "N", "Final", "100600", "93300", "7300", "0.072" ]
+, [ "row-qbyb_wdjc_jxhd", "00000000-0000-0000-2067-84E5B909753D", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2008-01-01T00:00:00", "2008", "January", "N", "Final", "101000", "92500", "8500", "0.084" ]
+, [ "row-bxem.sgx8~r7tu", "00000000-0000-0000-3258-2416224B9C30", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2009-01-01T00:00:00", "2009", "January", "N", "Final", "102900", "90500", "12500", "0.121" ]
+, [ "row-nrsb~i9p7_39kt", "00000000-0000-0000-DE83-53C988FF01D4", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2010-01-01T00:00:00", "2010", "January", "N", "Final", "101800", "86700", "15100", "0.148" ]
+, [ "row-aj86-rhmg.esri", "00000000-0000-0000-5747-73F1609FA7F6", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2011-01-01T00:00:00", "2011", "January", "N", "Final", "100800", "85500", "15300", "0.152" ]
+, [ "row-ed8u_w3yz-ywma", "00000000-0000-0000-D00C-D74A1D7269B2", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2012-01-01T00:00:00", "2012", "January", "N", "Final", "101200", "87300", "13800", "0.137" ]
+, [ "row-vwh4~pi3p~nkr4", "00000000-0000-0000-ACED-86137E566010", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2013-01-01T00:00:00", "2013", "January", "N", "Final", "102300", "89700", "12600", "0.123" ]
+, [ "row-paih~yegx~e37v", "00000000-0000-0000-875A-8EE5E32FC585", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2014-01-01T00:00:00", "2014", "January", "N", "Final", "101500", "91300", "10200", "0.101" ]
+, [ "row-j93j.hgcr~gzk7", "00000000-0000-0000-208D-C37F9BD18BBE", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2015-01-01T00:00:00", "2015", "January", "N", "Final", "100900", "92300", "8600", "0.085" ]
+, [ "row-fk9e~whzm~wymm", "00000000-0000-0000-FCC5-1164F78F6FD4", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2016-01-01T00:00:00", "2016", "January", "N", "Final", "100300", "92700", "7600", "0.075" ]
+, [ "row-2cbq-hk7x-4kc3", "00000000-0000-0000-0E39-8CAE2D9BF7C9", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2017-01-01T00:00:00", "2017", "January", "N", "Final", "101500", "94200", "7300", "0.072" ]
+, [ "row-qsjt~66mi-kuuh", "00000000-0000-0000-C3E2-62F19E38114F", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2018-01-01T00:00:00", "2018", "January", "N", "Final", "100400", "94600", "5800", "0.058" ]
+, [ "row-77vg_yuee_3qag", "00000000-0000-0000-45E1-45BCBC21F87C", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2019-01-01T00:00:00", "2019", "January", "N", "Final", "104000", "97100", "6900", "0.066" ]
+, [ "row-hubd~5cye-6hph", "00000000-0000-0000-AB26-36641B9464E5", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1990-02-01T00:00:00", "1990", "February", "N", "Final", "78200", "70900", "7300", "0.093" ]
+, [ "row-9bnc_4r3v-zzkd", "00000000-0000-0000-07B7-DEF8FB645F14", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1991-02-01T00:00:00", "1991", "February", "N", "Final", "80900", "72200", "8700", "0.107" ]
+, [ "row-28gn~6e3b_j85w", "00000000-0000-0000-3D54-D20512567162", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1992-02-01T00:00:00", "1992", "February", "N", "Final", "81400", "70900", "10500", "0.129" ]
+, [ "row-abxf.8u5z-63xg", "00000000-0000-0000-E6B5-E49BDBAF5F11", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1993-02-01T00:00:00", "1993", "February", "N", "Final", "82400", "70500", "11900", "0.145" ]
+, [ "row-qrwj-np2q-v6nq", "00000000-0000-0000-8FE3-3E3BB4B0604B", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1994-02-01T00:00:00", "1994", "February", "N", "Final", "83900", "73400", "10500", "0.125" ]
+, [ "row-a94j.i2yp~qta4", "00000000-0000-0000-A8C1-2BFFBC3CDB87", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1995-02-01T00:00:00", "1995", "February", "N", "Final", "82800", "73700", "9100", "0.11" ]
+, [ "row-nru9_3ssk.w2ad", "00000000-0000-0000-330E-EAF528DA3DDF", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1996-02-01T00:00:00", "1996", "February", "N", "Final", "82100", "73400", "8700", "0.106" ]
+, [ "row-4hbs.tmfw_ccdq", "00000000-0000-0000-5B7C-BD6E994B3443", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1997-02-01T00:00:00", "1997", "February", "N", "Final", "84100", "75600", "8500", "0.101" ]
+, [ "row-msnq-tsmu.tqjf", "00000000-0000-0000-B27D-578A236B2DEB", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1998-02-01T00:00:00", "1998", "February", "N", "Final", "85200", "76500", "8700", "0.103" ]
+, [ "row-62qk_6ybt-uyqk", "00000000-0000-0000-9258-B0436A4FB4BB", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1999-02-01T00:00:00", "1999", "February", "N", "Final", "85400", "78000", "7300", "0.086" ]
+, [ "row-umib~74d4.iucs", "00000000-0000-0000-9706-8B8B980CA4FA", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2000-02-01T00:00:00", "2000", "February", "N", "Final", "92700", "86100", "6600", "0.071" ]
+, [ "row-3nm4~dsze_pg65", "00000000-0000-0000-524E-5D86AEFEFA0F", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2001-02-01T00:00:00", "2001", "February", "N", "Final", "94500", "87800", "6700", "0.071" ]
+, [ "row-j65t_4ekb~uwrm", "00000000-0000-0000-E72C-B5BE6A6FCF9F", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2002-02-01T00:00:00", "2002", "February", "N", "Final", "97100", "89500", "7700", "0.079" ]
+, [ "row-r9wc~qgaq-3yxg", "00000000-0000-0000-5CB8-2A76FB48B6D2", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2003-02-01T00:00:00", "2003", "February", "N", "Final", "99100", "90900", "8200", "0.083" ]
+, [ "row-wpki~ghqe~s2z6", "00000000-0000-0000-A14B-F76CB7FF03C1", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2004-02-01T00:00:00", "2004", "February", "N", "Final", "97800", "89700", "8100", "0.082" ]
+, [ "row-ck27-e82k-c325", "00000000-0000-0000-4B15-85A60AF0AA9E", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2005-02-01T00:00:00", "2005", "February", "N", "Final", "98400", "90600", "7700", "0.079" ]
+, [ "row-78wz.yc6m~qwsh", "00000000-0000-0000-829F-DFD933FFF150", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2006-02-01T00:00:00", "2006", "February", "N", "Final", "99000", "92200", "6800", "0.069" ]
+, [ "row-d34u~8x6d.exrv", "00000000-0000-0000-A4E3-C7675AB85ACE", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2007-02-01T00:00:00", "2007", "February", "N", "Final", "101700", "94500", "7100", "0.07" ]
+, [ "row-tvdh.f2xq_rz5p", "00000000-0000-0000-76EA-38D62F2100BC", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2008-02-01T00:00:00", "2008", "February", "N", "Final", "102300", "94100", "8200", "0.08" ]
+, [ "row-gdaz_bpbi_kes9", "00000000-0000-0000-0426-6433FA3CF1EB", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2009-02-01T00:00:00", "2009", "February", "N", "Final", "104300", "91500", "12800", "0.123" ]
+, [ "row-9ue5.ypqk.pvm8", "00000000-0000-0000-DEF6-421ABE4E6BA6", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2010-02-01T00:00:00", "2010", "February", "N", "Final", "102400", "87300", "15100", "0.148" ]
+, [ "row-5nfc_87xj_zyz3", "00000000-0000-0000-E22F-EA7F978E9A81", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2011-02-01T00:00:00", "2011", "February", "N", "Final", "101000", "86200", "14700", "0.146" ]
+, [ "row-4rrf-gknu.enbk", "00000000-0000-0000-7125-632A6EEFF688", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2012-02-01T00:00:00", "2012", "February", "N", "Final", "101000", "87400", "13700", "0.135" ]
+, [ "row-pe32.mt98-32vt", "00000000-0000-0000-EC0E-434F5D427E63", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2013-02-01T00:00:00", "2013", "February", "N", "Final", "101900", "90200", "11700", "0.115" ]
+, [ "row-pzkk.f2au_m4s4", "00000000-0000-0000-1219-FF4B268DC1FE", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2014-02-01T00:00:00", "2014", "February", "N", "Final", "101700", "91500", "10200", "0.1" ]
+, [ "row-aj7b~fzng_9uck", "00000000-0000-0000-4A81-E9F244B95184", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2015-02-01T00:00:00", "2015", "February", "N", "Final", "101400", "93200", "8100", "0.08" ]
+, [ "row-jbd3.y6xt_k9ty", "00000000-0000-0000-0A58-D9E2BD2B99D2", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2016-02-01T00:00:00", "2016", "February", "N", "Final", "101300", "93800", "7400", "0.073" ]
+, [ "row-fnxi_8fap.77bf", "00000000-0000-0000-4483-1F69D1DE43F4", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2017-02-01T00:00:00", "2017", "February", "N", "Final", "102100", "94900", "7200", "0.07" ]
+, [ "row-b43h.6kgq_unej", "00000000-0000-0000-F0E1-1E34ACB84C37", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2018-02-01T00:00:00", "2018", "February", "N", "Final", "101000", "95200", "5900", "0.058" ]
+, [ "row-smxe_deri_9i6y", "00000000-0000-0000-5024-D234445A7C33", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2019-02-01T00:00:00", "2019", "February", "N", "Final", "104500", "98200", "6300", "0.061" ]
+, [ "row-mv77_rfuu_iawh", "00000000-0000-0000-AEBE-05F7C8E94D66", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1990-03-01T00:00:00", "1990", "March", "N", "Final", "78500", "71300", "7300", "0.092" ]
+, [ "row-6dry~frfj-w5fr", "00000000-0000-0000-BE43-9FCE79661FA4", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1991-03-01T00:00:00", "1991", "March", "N", "Final", "79400", "70600", "8700", "0.11" ]
+, [ "row-brn4.73qw~hsm4", "00000000-0000-0000-D007-4075752936FB", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1992-03-01T00:00:00", "1992", "March", "N", "Final", "81600", "71500", "10100", "0.124" ]
+, [ "row-vdcp~xtrj.m4mq", "00000000-0000-0000-C5B6-E4F41DF7034A", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1993-03-01T00:00:00", "1993", "March", "N", "Final", "82000", "70700", "11400", "0.138" ]
+, [ "row-ekbi.yuyt.4pvz", "00000000-0000-0000-5A95-ABA58E4791FD", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1994-03-01T00:00:00", "1994", "March", "N", "Final", "82200", "72200", "10100", "0.123" ]
+, [ "row-rsu3_cc2j-8caj", "00000000-0000-0000-9E71-A4009A07E724", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1995-03-01T00:00:00", "1995", "March", "N", "Final", "82700", "73500", "9200", "0.112" ]
+, [ "row-bewu_5nyb-exxs", "00000000-0000-0000-7E71-EB800B33E2F9", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1996-03-01T00:00:00", "1996", "March", "N", "Final", "81800", "73200", "8700", "0.106" ]
+, [ "row-xw2t-bhkb_wt96", "00000000-0000-0000-AB60-BDFCE8A7AA37", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1997-03-01T00:00:00", "1997", "March", "N", "Final", "84700", "76300", "8400", "0.099" ]
+, [ "row-e7nz-426a.3h5b", "00000000-0000-0000-E448-BC55835F8053", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1998-03-01T00:00:00", "1998", "March", "N", "Final", "85200", "76500", "8600", "0.101" ]
+, [ "row-a2j6_egfj-eu5f", "00000000-0000-0000-A5C8-899B2A77A13D", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1999-03-01T00:00:00", "1999", "March", "N", "Final", "85500", "78400", "7100", "0.083" ]
+, [ "row-i5n4_b9nb.8aub", "00000000-0000-0000-314E-21056E3E7B11", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2000-03-01T00:00:00", "2000", "March", "N", "Final", "92800", "86000", "6700", "0.072" ]
+, [ "row-u4d5_qvt5~3sgq", "00000000-0000-0000-9976-CE5EC14E2BD8", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2001-03-01T00:00:00", "2001", "March", "N", "Final", "95400", "88400", "7000", "0.074" ]
+, [ "row-wg3g_5ify_42f8", "00000000-0000-0000-4ECA-358EDB4D2D7C", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2002-03-01T00:00:00", "2002", "March", "N", "Final", "97900", "90200", "7700", "0.078" ]
+, [ "row-8mqh.9kfd-reaz", "00000000-0000-0000-C0AD-FC9B5E345B23", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2003-03-01T00:00:00", "2003", "March", "N", "Final", "98800", "90700", "8100", "0.082" ]
+, [ "row-w8fc_iurq-z7di", "00000000-0000-0000-564D-70EDB09B04D3", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2004-03-01T00:00:00", "2004", "March", "N", "Final", "97300", "88900", "8400", "0.086" ]
+, [ "row-is6b-33hz.46d8", "00000000-0000-0000-BE98-A34B37E68245", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2005-03-01T00:00:00", "2005", "March", "N", "Final", "97800", "90400", "7400", "0.076" ]
+, [ "row-tjmh~4vh3_mrnm", "00000000-0000-0000-EAA1-3D81CB1D4313", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2006-03-01T00:00:00", "2006", "March", "N", "Final", "98400", "91500", "7000", "0.071" ]
+, [ "row-4hqj-3kdd.vuct", "00000000-0000-0000-7FDB-988F53F64A8A", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2007-03-01T00:00:00", "2007", "March", "N", "Final", "101700", "94600", "7200", "0.07" ]
+, [ "row-x2wj_ngxc~3gb4", "00000000-0000-0000-2341-F043D0EE2DB3", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2008-03-01T00:00:00", "2008", "March", "N", "Final", "102100", "93600", "8500", "0.084" ]
+, [ "row-cmac~nrzq_nscz", "00000000-0000-0000-5A2E-13B04D13F279", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2009-03-01T00:00:00", "2009", "March", "N", "Final", "103500", "90600", "13000", "0.125" ]
+, [ "row-2uk8.4yah.wdy2", "00000000-0000-0000-073A-3F6A851BE244", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2010-03-01T00:00:00", "2010", "March", "N", "Final", "102500", "87500", "15000", "0.147" ]
+, [ "row-gkhn-tu3x_rvbp", "00000000-0000-0000-E19F-3CB260DDC330", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2011-03-01T00:00:00", "2011", "March", "N", "Final", "100300", "85700", "14600", "0.146" ]
+, [ "row-3uwv-nyzm.282i", "00000000-0000-0000-2785-F6D49861AE9F", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2012-03-01T00:00:00", "2012", "March", "N", "Final", "100300", "86800", "13500", "0.134" ]
+, [ "row-ghpc.3tyh.28s9", "00000000-0000-0000-4870-25D3E8E8DEB2", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2013-03-01T00:00:00", "2013", "March", "N", "Final", "101000", "89800", "11200", "0.111" ]
+, [ "row-a38n~2mkk.trqz", "00000000-0000-0000-8A7F-759D3C1D0799", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2014-03-01T00:00:00", "2014", "March", "N", "Final", "101700", "91800", "9900", "0.098" ]
+, [ "row-advn.9vgv.bys4", "00000000-0000-0000-DB1A-52B9226EDCE2", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2015-03-01T00:00:00", "2015", "March", "N", "Final", "101100", "93200", "7900", "0.078" ]
+, [ "row-ebrw.psnu-7x7n", "00000000-0000-0000-EDE9-14A1B7A8C0CE", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2016-03-01T00:00:00", "2016", "March", "N", "Final", "102000", "94500", "7500", "0.073" ]
+, [ "row-5iva-aai9~kdy2", "00000000-0000-0000-33CA-6F8012B88C92", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2017-03-01T00:00:00", "2017", "March", "N", "Final", "102900", "96300", "6600", "0.064" ]
+, [ "row-ct4n-6b8k.jggm", "00000000-0000-0000-AA64-B1E2F8AF00C7", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2018-03-01T00:00:00", "2018", "March", "N", "Final", "102800", "97200", "5600", "0.055" ]
+, [ "row-2k2c~9m5x~6dtr", "00000000-0000-0000-EBB1-034C6BEA0532", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2019-03-01T00:00:00", "2019", "March", "N", "Final", "104300", "97800", "6500", "0.062" ]
+, [ "row-ykkv_3x9h~zgbc", "00000000-0000-0000-BA43-01B638702EC9", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1990-04-01T00:00:00", "1990", "April", "N", "Final", "78700", "71900", "6900", "0.087" ]
+, [ "row-r7st-6ii8.at4d", "00000000-0000-0000-D2AE-72AE3F249C61", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1991-04-01T00:00:00", "1991", "April", "N", "Final", "80600", "72500", "8000", "0.1" ]
+, [ "row-xfzt-z2uu.xspi", "00000000-0000-0000-30F8-988FFDB3615E", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1992-04-01T00:00:00", "1992", "April", "N", "Final", "81700", "71900", "9800", "0.12" ]
+, [ "row-b3dq~mht4~p988", "00000000-0000-0000-943E-04AE0D1BA0DE", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1993-04-01T00:00:00", "1993", "April", "N", "Final", "81800", "71500", "10300", "0.126" ]
+, [ "row-trmp.a4jv~vt3y", "00000000-0000-0000-AF5A-5180AC59AA0D", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1994-04-01T00:00:00", "1994", "April", "N", "Final", "82000", "72900", "9000", "0.11" ]
+, [ "row-fvyb-ecqq~gqf4", "00000000-0000-0000-C1BA-91EDA679D222", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1995-04-01T00:00:00", "1995", "April", "N", "Final", "82200", "72900", "9300", "0.113" ]
+, [ "row-vz96-kcea_e8yt", "00000000-0000-0000-B754-72D77BC28E0C", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1996-04-01T00:00:00", "1996", "April", "N", "Final", "81600", "73500", "8100", "0.099" ]
+, [ "row-q769~z4yw-nsfj", "00000000-0000-0000-412B-C33197FE44A2", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1997-04-01T00:00:00", "1997", "April", "N", "Final", "84200", "76700", "7500", "0.089" ]
+, [ "row-8e6c.64a5~9rnq", "00000000-0000-0000-BF55-62672A1C99A7", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1998-04-01T00:00:00", "1998", "April", "N", "Final", "84600", "77300", "7300", "0.087" ]
+, [ "row-gcjj_73m2.mt2b", "00000000-0000-0000-497D-7A7A1EE2AFCE", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1999-04-01T00:00:00", "1999", "April", "N", "Final", "85800", "79700", "6100", "0.071" ]
+, [ "row-awfp.zme7.hev4", "00000000-0000-0000-4275-FAD20555173C", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2000-04-01T00:00:00", "2000", "April", "N", "Final", "93600", "88000", "5700", "0.06" ]
+, [ "row-pkvn_zq3r_v2jr", "00000000-0000-0000-AA68-2574FF49538E", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2001-04-01T00:00:00", "2001", "April", "N", "Final", "95100", "89100", "6000", "0.064" ]
+, [ "row-qbzz-sus8_mf3a", "00000000-0000-0000-12FB-98769AD55421", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2002-04-01T00:00:00", "2002", "April", "N", "Final", "97700", "90600", "7100", "0.072" ]
+, [ "row-fvgj_6rm3_u3ye", "00000000-0000-0000-F23F-398DE1B58A6E", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2003-04-01T00:00:00", "2003", "April", "N", "Final", "99700", "92200", "7400", "0.074" ]
+, [ "row-prsc.4jzr~yrzz", "00000000-0000-0000-F266-D7E1ACB37B16", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2004-04-01T00:00:00", "2004", "April", "N", "Final", "97200", "89900", "7300", "0.075" ]
+, [ "row-6q7g_mk6s.s5pu", "00000000-0000-0000-3A14-27D7E19065BA", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2005-04-01T00:00:00", "2005", "April", "N", "Final", "97700", "91100", "6600", "0.068" ]
+, [ "row-xsa8-ea2r-qzms", "00000000-0000-0000-E502-B69A731FD29B", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2006-04-01T00:00:00", "2006", "April", "N", "Final", "99100", "92500", "6600", "0.067" ]
+, [ "row-7t6i_kiek_a542", "00000000-0000-0000-B4AC-832A21437F80", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2007-04-01T00:00:00", "2007", "April", "N", "Final", "101400", "94800", "6600", "0.065" ]
+, [ "row-vriz~nxxy.cb5t", "00000000-0000-0000-4B09-F1915DD4EDDA", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2008-04-01T00:00:00", "2008", "April", "N", "Final", "103100", "95600", "7600", "0.073" ]
+, [ "row-xnve~i2se-3ai3", "00000000-0000-0000-7314-0BF9158F4B88", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2009-04-01T00:00:00", "2009", "April", "N", "Final", "104200", "92200", "12000", "0.115" ]
+, [ "row-yj5i-43ni.gidh", "00000000-0000-0000-98AA-EBD13D59FA7E", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2010-04-01T00:00:00", "2010", "April", "N", "Final", "103100", "89000", "14100", "0.137" ]
+, [ "row-36u2~xdid~rmkp", "00000000-0000-0000-BE33-047239E9CB9F", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2011-04-01T00:00:00", "2011", "April", "N", "Final", "101300", "87700", "13600", "0.134" ]
+, [ "row-crwu_gi7q-z35n", "00000000-0000-0000-53E4-2C27C52473E9", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2012-04-01T00:00:00", "2012", "April", "N", "Final", "101300", "88900", "12400", "0.122" ]
+, [ "row-bsan.dvwb.eb22", "00000000-0000-0000-1AB2-30E88A77B6CE", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2013-04-01T00:00:00", "2013", "April", "N", "Final", "101900", "91700", "10300", "0.101" ]
+, [ "row-dvp8.ytas_a57y", "00000000-0000-0000-8297-E8412A55ACFC", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2014-04-01T00:00:00", "2014", "April", "N", "Final", "101200", "92500", "8700", "0.086" ]
+, [ "row-a9vh~w7vv.sdxn", "00000000-0000-0000-C6D4-9BB80C132E6B", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2015-04-01T00:00:00", "2015", "April", "N", "Final", "100900", "93800", "7100", "0.07" ]
+, [ "row-bueb_3dnd_zkn2", "00000000-0000-0000-1948-B337D219E63D", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2016-04-01T00:00:00", "2016", "April", "N", "Final", "101700", "95100", "6600", "0.065" ]
+, [ "row-4jij-gckj.4yut", "00000000-0000-0000-DEBC-C1ACA240A1B4", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2017-04-01T00:00:00", "2017", "April", "N", "Final", "102800", "96800", "6000", "0.058" ]
+, [ "row-sk26~axw8~4ckg", "00000000-0000-0000-FBFA-2557192135DC", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2018-04-01T00:00:00", "2018", "April", "N", "Final", "102800", "97800", "5000", "0.049" ]
+, [ "row-jqwf-9xbx~4urm", "00000000-0000-0000-E5FD-A599D92F8BA5", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2019-04-01T00:00:00", "2019", "April", "N", "Final", "102700", "97600", "5100", "0.05" ]
+, [ "row-vdzb_9erb~hkce", "00000000-0000-0000-3AE7-C61DA73D426A", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1990-05-01T00:00:00", "1990", "May", "N", "Final", "79300", "72900", "6400", "0.08" ]
+, [ "row-svrh-nw2g.7b75", "00000000-0000-0000-0499-32473E909404", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1991-05-01T00:00:00", "1991", "May", "N", "Final", "80400", "72800", "7600", "0.095" ]
+, [ "row-rcg8-vrem.hirb", "00000000-0000-0000-DFE6-7308D1D2AC47", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1992-05-01T00:00:00", "1992", "May", "N", "Final", "82500", "73000", "9400", "0.114" ]
+, [ "row-jrta-x27x~bpgc", "00000000-0000-0000-FCE0-C762D225F460", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1993-05-01T00:00:00", "1993", "May", "N", "Final", "83000", "73500", "9600", "0.115" ]
+, [ "row-5yq5-7msy_uwxg", "00000000-0000-0000-09A4-EE229E8F6973", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1994-05-01T00:00:00", "1994", "May", "N", "Final", "83500", "75400", "8100", "0.097" ]
+, [ "row-45x3.s6zk-mdmz", "00000000-0000-0000-2300-013FA2ADEC93", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1995-05-01T00:00:00", "1995", "May", "N", "Final", "82500", "74100", "8400", "0.102" ]
+, [ "row-jtcm_ytmk.w7j4", "00000000-0000-0000-3A9C-A036239441D6", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1996-05-01T00:00:00", "1996", "May", "N", "Final", "82200", "74800", "7400", "0.09" ]
+, [ "row-wedj~d2sw-4gg8", "00000000-0000-0000-E45B-9FE8AB9E24CD", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1997-05-01T00:00:00", "1997", "May", "N", "Final", "84200", "77300", "6900", "0.082" ]
+, [ "row-epzr~262e_p7uk", "00000000-0000-0000-2DAF-FF0B09FE8797", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1998-05-01T00:00:00", "1998", "May", "N", "Final", "85100", "78200", "6800", "0.08" ]
+, [ "row-4wu5.37q6_j93w", "00000000-0000-0000-2219-0DAB8F00263D", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1999-05-01T00:00:00", "1999", "May", "N", "Final", "85200", "79800", "5400", "0.063" ]
+, [ "row-ysz9_cx5w_iwgc", "00000000-0000-0000-4752-B7BC65817160", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2000-05-01T00:00:00", "2000", "May", "N", "Final", "93300", "87700", "5500", "0.059" ]
+, [ "row-yv8s-k2kw.vsec", "00000000-0000-0000-5C7C-C1EB61BC39FA", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2001-05-01T00:00:00", "2001", "May", "N", "Final", "94100", "88700", "5400", "0.057" ]
+, [ "row-gjb6_gw62~65dg", "00000000-0000-0000-B22F-2C1F92F1279D", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2002-05-01T00:00:00", "2002", "May", "N", "Final", "96600", "90200", "6500", "0.067" ]
+, [ "row-ud7p_uxb9-cphn", "00000000-0000-0000-46D2-4DFF534C41D1", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2003-05-01T00:00:00", "2003", "May", "N", "Final", "98600", "91700", "6900", "0.07" ]
+, [ "row-rjb6.h43r~xs6t", "00000000-0000-0000-EDE0-6F22255BD4C3", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2004-05-01T00:00:00", "2004", "May", "N", "Final", "96500", "89800", "6700", "0.07" ]
+, [ "row-gwgy-eq3j_a88i", "00000000-0000-0000-0233-CCF7EA1F6247", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2005-05-01T00:00:00", "2005", "May", "N", "Final", "97400", "91300", "6200", "0.063" ]
+, [ "row-2pf7_v7ip_a35b", "00000000-0000-0000-2B56-2613B6A7A491", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2006-05-01T00:00:00", "2006", "May", "N", "Final", "98000", "92300", "5700", "0.059" ]
+, [ "row-iqrm~tu7n-vuwy", "00000000-0000-0000-933B-4CA868766511", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2007-05-01T00:00:00", "2007", "May", "N", "Final", "100300", "94200", "6100", "0.061" ]
+, [ "row-99qp_6y8g~4ss2", "00000000-0000-0000-9D3C-C8014FE3D75E", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2008-05-01T00:00:00", "2008", "May", "N", "Final", "102300", "94700", "7600", "0.074" ]
+, [ "row-fb2d-r2s4~tssc", "00000000-0000-0000-8C5B-62D962A15689", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2009-05-01T00:00:00", "2009", "May", "N", "Final", "103600", "91600", "12000", "0.115" ]
+, [ "row-drir.hpzu~qxs3", "00000000-0000-0000-3649-684CB68FE22D", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2010-05-01T00:00:00", "2010", "May", "N", "Final", "102200", "88600", "13600", "0.133" ]
+, [ "row-upif.267a.5uc8", "00000000-0000-0000-A914-88CD1D93191E", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2011-05-01T00:00:00", "2011", "May", "N", "Final", "100500", "87300", "13100", "0.131" ]
+, [ "row-8fb2.q7zj~23uk", "00000000-0000-0000-48EC-700AE25DA8B4", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2012-05-01T00:00:00", "2012", "May", "N", "Final", "101400", "89400", "12000", "0.118" ]
+, [ "row-a9ia_fkxk~9hsr", "00000000-0000-0000-FD98-8E48CAEBC3CB", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2013-05-01T00:00:00", "2013", "May", "N", "Final", "101800", "91700", "10100", "0.099" ]
+, [ "row-2f4z~p943~p94t", "00000000-0000-0000-56A2-5EEAA5526199", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2014-05-01T00:00:00", "2014", "May", "N", "Final", "101400", "93000", "8400", "0.082" ]
+, [ "row-2ni9.q9sm-u8wc", "00000000-0000-0000-15BC-E5C6A620D5D4", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2015-05-01T00:00:00", "2015", "May", "N", "Final", "102000", "94900", "7100", "0.069" ]
+, [ "row-h7bd.tpza-2a2m", "00000000-0000-0000-1359-1AC1268B791A", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2016-05-01T00:00:00", "2016", "May", "N", "Final", "101900", "95800", "6000", "0.059" ]
+, [ "row-mkmf~3dg8.kp2a", "00000000-0000-0000-7C36-A49EAEC94E7F", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2017-05-01T00:00:00", "2017", "May", "N", "Final", "102500", "97200", "5400", "0.053" ]
+, [ "row-iekt_pra2.g3id", "00000000-0000-0000-7FF4-7421AA1AF0D7", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2018-05-01T00:00:00", "2018", "May", "N", "Final", "102700", "98300", "4400", "0.043" ]
+, [ "row-zju6_pvz7-6jnr", "00000000-0000-0000-196B-BAB35D422DBE", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2019-05-01T00:00:00", "2019", "May", "N", "Final", "102500", "98100", "4400", "0.043" ]
+, [ "row-xc2i_3tmp~ux32", "00000000-0000-0000-1465-60801FAD84F3", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1990-06-01T00:00:00", "1990", "June", "N", "Final", "77800", "71000", "6800", "0.087" ]
+, [ "row-izq6~kive_87v6", "00000000-0000-0000-BA92-1C9BD0DF0238", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1991-06-01T00:00:00", "1991", "June", "N", "Final", "80000", "71800", "8200", "0.102" ]
+, [ "row-arb3~kvkv_zz5w", "00000000-0000-0000-A06E-4C9E36AFA77A", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1992-06-01T00:00:00", "1992", "June", "N", "Final", "81900", "71400", "10500", "0.129" ]
+, [ "row-xagz_9usu.w4d5", "00000000-0000-0000-2343-8DBDE6E48A5E", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1993-06-01T00:00:00", "1993", "June", "N", "Final", "82600", "72100", "10500", "0.128" ]
+, [ "row-vfuj-9cw8-3hud", "00000000-0000-0000-AB85-BF3F5C805058", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1994-06-01T00:00:00", "1994", "June", "N", "Final", "81400", "72900", "8500", "0.105" ]
+, [ "row-65dt.ig3w-rkps", "00000000-0000-0000-E8D5-D4D7F90607F4", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1995-06-01T00:00:00", "1995", "June", "N", "Final", "80500", "71800", "8800", "0.109" ]
+, [ "row-eeqb_gacy~6k4g", "00000000-0000-0000-F0A1-02F406999F3B", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1996-06-01T00:00:00", "1996", "June", "N", "Final", "82100", "74300", "7800", "0.095" ]
+, [ "row-qx4p-uiyt~pvuq", "00000000-0000-0000-64D4-8CDEE52C7259", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1997-06-01T00:00:00", "1997", "June", "N", "Final", "82900", "75000", "8000", "0.096" ]
+, [ "row-qbzn~uj8z-q9qy", "00000000-0000-0000-609D-6728D5598717", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1998-06-01T00:00:00", "1998", "June", "N", "Final", "83800", "76200", "7700", "0.091" ]
+, [ "row-z84p~eiyn.tzte", "00000000-0000-0000-767F-4E5C212D423D", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1999-06-01T00:00:00", "1999", "June", "N", "Final", "85000", "78900", "6200", "0.072" ]
+, [ "row-sx4h~t2tp.qq7g", "00000000-0000-0000-5D76-D4715D04DA8E", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2000-06-01T00:00:00", "2000", "June", "N", "Final", "92100", "86000", "6100", "0.066" ]
+, [ "row-z5p9~jqcs~64kc", "00000000-0000-0000-46FD-EF9F8CD038AF", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2001-06-01T00:00:00", "2001", "June", "N", "Final", "93500", "87100", "6400", "0.068" ]
+, [ "row-njh6.8bfz.w2wb", "00000000-0000-0000-92B2-574AAAE00010", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2002-06-01T00:00:00", "2002", "June", "N", "Final", "96100", "88800", "7300", "0.076" ]
+, [ "row-tb7s_md55.k2qd", "00000000-0000-0000-402E-6F9F3D60C8B6", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2003-06-01T00:00:00", "2003", "June", "N", "Final", "98400", "90500", "7900", "0.08" ]
+, [ "row-chdk.qjab-tjyg", "00000000-0000-0000-6BCB-087EDE315DEF", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2004-06-01T00:00:00", "2004", "June", "N", "Final", "97700", "90200", "7500", "0.076" ]
+, [ "row-hw5s_4fzg-6zhr", "00000000-0000-0000-1633-7B5923633F74", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2005-06-01T00:00:00", "2005", "June", "N", "Final", "96600", "89800", "6700", "0.07" ]
+, [ "row-ikhy~tky4~aepm", "00000000-0000-0000-9AD2-9A7AC5D06AFA", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2006-06-01T00:00:00", "2006", "June", "N", "Final", "98200", "91800", "6300", "0.064" ]
+, [ "row-feqd~gbeu_i7bn", "00000000-0000-0000-4273-0FDE72968DF9", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2007-06-01T00:00:00", "2007", "June", "N", "Final", "101000", "94200", "6800", "0.067" ]
+, [ "row-mbdd_pvem.fhw2", "00000000-0000-0000-F170-5FBDE6255FE2", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2008-06-01T00:00:00", "2008", "June", "N", "Final", "102900", "94400", "8500", "0.083" ]
+, [ "row-mk3f_n3j8_y9g9", "00000000-0000-0000-EECF-1D0302B82E58", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2009-06-01T00:00:00", "2009", "June", "N", "Final", "104300", "91300", "13100", "0.125" ]
+, [ "row-drrf-rvqh-ddrn", "00000000-0000-0000-0F4D-E1DC4F3DD4E9", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2010-06-01T00:00:00", "2010", "June", "N", "Final", "102500", "88300", "14200", "0.139" ]
+, [ "row-6qds~w6wt.hixm", "00000000-0000-0000-C6B7-B2AB4D264B3C", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2011-06-01T00:00:00", "2011", "June", "N", "Final", "100900", "86600", "14300", "0.141" ]
+, [ "row-zm5u_bbe5.exja", "00000000-0000-0000-EE2B-F0CEC765FDF5", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2012-06-01T00:00:00", "2012", "June", "N", "Final", "101400", "88500", "12900", "0.127" ]
+, [ "row-2xdy_pvm3.38ju", "00000000-0000-0000-B36A-30368BE07123", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2013-06-01T00:00:00", "2013", "June", "N", "Final", "102100", "91100", "11000", "0.108" ]
+, [ "row-yzz4-v6ja~pgag", "00000000-0000-0000-B62C-85C7846C9949", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2014-06-01T00:00:00", "2014", "June", "N", "Final", "101500", "92600", "8900", "0.087" ]
+, [ "row-e3at~3e5v~24dd", "00000000-0000-0000-AEE1-5A95C6CFC524", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2015-06-01T00:00:00", "2015", "June", "N", "Final", "101000", "93500", "7500", "0.075" ]
+, [ "row-rarp-qv4i_r4ki", "00000000-0000-0000-AE1A-416BD8975179", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2016-06-01T00:00:00", "2016", "June", "N", "Final", "101100", "94100", "7000", "0.069" ]
+, [ "row-rtw3_w4vg_m886", "00000000-0000-0000-DEEC-D9003B1B9D8D", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2017-06-01T00:00:00", "2017", "June", "N", "Final", "101300", "95300", "6000", "0.059" ]
+, [ "row-ccdn.3wm2.k3mm", "00000000-0000-0000-285B-1D8065CEF8DC", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2018-06-01T00:00:00", "2018", "June", "N", "Final", "101900", "96500", "5300", "0.052" ]
+, [ "row-dxwd~9c83.aicy", "00000000-0000-0000-A5F4-E128C68EB6DE", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2019-06-01T00:00:00", "2019", "June", "N", "Final", "101500", "96200", "5200", "0.052" ]
+, [ "row-re4k-cuq5.itie", "00000000-0000-0000-A055-CC1802913B15", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1990-07-01T00:00:00", "1990", "July", "N", "Final", "78800", "72000", "6800", "0.086" ]
+, [ "row-dyqt~euv7~68hj", "00000000-0000-0000-15FD-1AE6CBC9D99F", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1991-07-01T00:00:00", "1991", "July", "N", "Final", "77200", "69100", "8100", "0.104" ]
+, [ "row-6b7e~2zkg-gkc3", "00000000-0000-0000-9C1B-1E0DF4A87697", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1992-07-01T00:00:00", "1992", "July", "N", "Final", "84000", "74200", "9800", "0.116" ]
+, [ "row-z4be~zb6k_mns8", "00000000-0000-0000-D513-F17139BD771D", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1993-07-01T00:00:00", "1993", "July", "N", "Final", "84000", "73700", "10300", "0.122" ]
+, [ "row-84gq_qe9f.ch4t", "00000000-0000-0000-EB7B-CC0BEA2B07C4", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1994-07-01T00:00:00", "1994", "July", "N", "Final", "84100", "75400", "8700", "0.104" ]
+, [ "row-wcag-9iv3~mhuc", "00000000-0000-0000-2DF0-87C511455AD3", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1995-07-01T00:00:00", "1995", "July", "N", "Final", "82200", "73700", "8500", "0.104" ]
+, [ "row-recw_xrau-g9c8", "00000000-0000-0000-67FD-4C8A1FC2CD01", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1996-07-01T00:00:00", "1996", "July", "N", "Final", "82000", "74000", "8000", "0.097" ]
+, [ "row-q3wj.eeu7_iv4d", "00000000-0000-0000-D13B-8D37C19CE60F", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1997-07-01T00:00:00", "1997", "July", "N", "Final", "82500", "75000", "7500", "0.091" ]
+, [ "row-y2xk-sg8m.u22g", "00000000-0000-0000-2A67-9F50F46C9D6E", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1998-07-01T00:00:00", "1998", "July", "N", "Final", "83400", "76000", "7400", "0.089" ]
+, [ "row-c9ae~spn8-i2zd", "00000000-0000-0000-CE16-56C6A085A515", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1999-07-01T00:00:00", "1999", "July", "N", "Final", "84600", "78400", "6300", "0.074" ]
+, [ "row-jwcu-6tj5_wajg", "00000000-0000-0000-2F9C-6CF21A411ED9", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2000-07-01T00:00:00", "2000", "July", "N", "Final", "92100", "85900", "6200", "0.067" ]
+, [ "row-jqg6~nqvd-p2uj", "00000000-0000-0000-6FCE-723CFD046224", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2001-07-01T00:00:00", "2001", "July", "N", "Final", "94100", "87900", "6200", "0.066" ]
+, [ "row-2pp7~jnui-c2xn", "00000000-0000-0000-F8CE-121E730DE5C0", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2002-07-01T00:00:00", "2002", "July", "N", "Final", "95700", "88300", "7500", "0.078" ]
+, [ "row-zdnv-eaqy_i3jw", "00000000-0000-0000-353F-D6877622F146", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2003-07-01T00:00:00", "2003", "July", "N", "Final", "96300", "88600", "7700", "0.08" ]
+, [ "row-ieri-66ct_mx23", "00000000-0000-0000-F664-9E9D14C4DF98", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2004-07-01T00:00:00", "2004", "July", "N", "Final", "96500", "89200", "7400", "0.076" ]
+, [ "row-d57n_me2n~cbvy", "00000000-0000-0000-CB02-3D898D1E6791", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2005-07-01T00:00:00", "2005", "July", "N", "Final", "97700", "90800", "6900", "0.07" ]
+, [ "row-nrqr-gfmb~u2ra", "00000000-0000-0000-E9FF-BABF2DF39E3C", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2006-07-01T00:00:00", "2006", "July", "N", "Final", "98100", "91500", "6600", "0.068" ]
+, [ "row-ncy2-2ndx.ektr", "00000000-0000-0000-241F-BBF29524A541", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2007-07-01T00:00:00", "2007", "July", "N", "Final", "100500", "93300", "7200", "0.071" ]
+, [ "row-i36j.ghg4-65td", "00000000-0000-0000-4A76-9E56A03060C7", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2008-07-01T00:00:00", "2008", "July", "N", "Final", "102800", "93600", "9200", "0.089" ]
+, [ "row-rb7f~p6cu-gyij", "00000000-0000-0000-824C-2EDA669E74F5", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2009-07-01T00:00:00", "2009", "July", "N", "Final", "103100", "89700", "13300", "0.129" ]
+, [ "row-wsvr.n5b3-fze8", "00000000-0000-0000-9A5B-A6A46A834C67", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2010-07-01T00:00:00", "2010", "July", "N", "Final", "102500", "87800", "14700", "0.143" ]
+, [ "row-37rn.ne7v~iyum", "00000000-0000-0000-5D27-68A6A193EB74", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2011-07-01T00:00:00", "2011", "July", "N", "Final", "99600", "85300", "14300", "0.144" ]
+, [ "row-4763~ghha~mk2i", "00000000-0000-0000-F314-E8C30E3B356D", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2012-07-01T00:00:00", "2012", "July", "N", "Final", "100100", "87100", "13000", "0.13" ]
+, [ "row-87kt-etkf_gyzi", "00000000-0000-0000-2DF6-60DD4E856493", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2013-07-01T00:00:00", "2013", "July", "N", "Final", "101500", "90600", "10900", "0.108" ]
+, [ "row-c9a5_23gm_u2z9", "00000000-0000-0000-FF37-ECDCD1C5B89C", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2014-07-01T00:00:00", "2014", "July", "N", "Final", "100000", "90700", "9300", "0.093" ]
+, [ "row-nfri.tihb.ugit", "00000000-0000-0000-9F85-C637D72D5124", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2015-07-01T00:00:00", "2015", "July", "N", "Final", "100600", "92900", "7700", "0.076" ]
+, [ "row-zddu.isgj-r4yc", "00000000-0000-0000-24EA-CBCAEF1CB82B", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2016-07-01T00:00:00", "2016", "July", "N", "Final", "101300", "94100", "7100", "0.07" ]
+, [ "row-zdqf~6if4-2dn4", "00000000-0000-0000-895C-E2CE387CC62B", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2017-07-01T00:00:00", "2017", "July", "N", "Final", "101700", "95400", "6200", "0.061" ]
+, [ "row-j3jx.sghp.dn9i", "00000000-0000-0000-662C-E5F93FDA144C", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2018-07-01T00:00:00", "2018", "July", "N", "Final", "102900", "97600", "5300", "0.052" ]
+, [ "row-nnsq~xw8d~fp52", "00000000-0000-0000-AA28-68C32364E970", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2019-07-01T00:00:00", "2019", "July", "N", "Final", "102300", "96800", "5500", "0.054" ]
+, [ "row-u55i~f9gf~tghg", "00000000-0000-0000-8AA3-5944664FBB6C", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1990-08-01T00:00:00", "1990", "August", "N", "Final", "78400", "72700", "5700", "0.072" ]
+, [ "row-2qnj.dspz_6ma6", "00000000-0000-0000-BC3D-7F8E0F9C36D4", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1991-08-01T00:00:00", "1991", "August", "N", "Final", "77100", "70200", "6900", "0.089" ]
+, [ "row-fip7-fa9t_amyp", "00000000-0000-0000-863D-C82D623765DA", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1992-08-01T00:00:00", "1992", "August", "N", "Final", "83400", "74600", "8800", "0.106" ]
+, [ "row-uhvv~h86b-4mpq", "00000000-0000-0000-E606-4FE6BE7AC15C", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1993-08-01T00:00:00", "1993", "August", "N", "Final", "85000", "76000", "9000", "0.106" ]
+, [ "row-eu59-ew8h.4n5p", "00000000-0000-0000-81F1-B602E9309088", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1994-08-01T00:00:00", "1994", "August", "N", "Final", "85100", "77400", "7700", "0.091" ]
+, [ "row-vcje-m27n.3byh", "00000000-0000-0000-55E9-EBAD086F1ACD", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1995-08-01T00:00:00", "1995", "August", "N", "Final", "82700", "75300", "7300", "0.089" ]
+, [ "row-66rt~ji7q-39kj", "00000000-0000-0000-1B9B-ABD31E215F6A", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1996-08-01T00:00:00", "1996", "August", "N", "Final", "83600", "76900", "6700", "0.08" ]
+, [ "row-9ccw-9fs3~ije9", "00000000-0000-0000-1F0D-13A699788D29", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1997-08-01T00:00:00", "1997", "August", "N", "Final", "82800", "76300", "6500", "0.079" ]
+, [ "row-897f-fpwb.ckva", "00000000-0000-0000-FF84-7A39788EDC37", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1998-08-01T00:00:00", "1998", "August", "N", "Final", "84600", "77900", "6700", "0.079" ]
+, [ "row-rsmv_t73n_9dzr", "00000000-0000-0000-32A3-954DF66333AD", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1999-08-01T00:00:00", "1999", "August", "N", "Final", "85300", "80000", "5300", "0.062" ]
+, [ "row-4i2t-nxxx~ve22", "00000000-0000-0000-D8EB-EEEC66544D71", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2000-08-01T00:00:00", "2000", "August", "N", "Final", "94200", "88700", "5500", "0.059" ]
+, [ "row-rse4_tkgy.pjk5", "00000000-0000-0000-362F-03F925C891AE", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2001-08-01T00:00:00", "2001", "August", "N", "Final", "95300", "89400", "5900", "0.062" ]
+, [ "row-dmzq~37yr~t558", "00000000-0000-0000-9B13-8E08F03B0E91", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2002-08-01T00:00:00", "2002", "August", "N", "Final", "97600", "90700", "6800", "0.07" ]
+, [ "row-g4sa.ztdj_f7ns", "00000000-0000-0000-0556-AFC8BF6D3B2B", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2003-08-01T00:00:00", "2003", "August", "N", "Final", "98200", "91200", "7000", "0.072" ]
+, [ "row-keck-62ky_xf68", "00000000-0000-0000-B464-FC6CB4039510", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2004-08-01T00:00:00", "2004", "August", "N", "Final", "98200", "91600", "6600", "0.067" ]
+, [ "row-mq45.f4rb~phkb", "00000000-0000-0000-10D0-942B14E87EA0", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2005-08-01T00:00:00", "2005", "August", "N", "Final", "99700", "93500", "6200", "0.062" ]
+, [ "row-3tz5-e9di.jpxb", "00000000-0000-0000-1CA3-22F3057D28F2", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2006-08-01T00:00:00", "2006", "August", "N", "Final", "101300", "95300", "6000", "0.059" ]
+, [ "row-mf9u_p6se~tsxd", "00000000-0000-0000-F1BC-1222075AFF4E", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2007-08-01T00:00:00", "2007", "August", "N", "Final", "101200", "94700", "6400", "0.063" ]
+, [ "row-dkux.fmjf_py85", "00000000-0000-0000-BA70-A90AEE06B4D6", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2008-08-01T00:00:00", "2008", "August", "N", "Final", "103800", "94900", "8900", "0.085" ]
+, [ "row-k6z4-vtd6~g4rd", "00000000-0000-0000-53DC-E1F7F7E32BF1", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2009-08-01T00:00:00", "2009", "August", "N", "Final", "104500", "91800", "12700", "0.122" ]
+, [ "row-ujek-5quc-qmum", "00000000-0000-0000-6D11-9010CA613484", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2010-08-01T00:00:00", "2010", "August", "N", "Final", "102700", "88800", "14000", "0.136" ]
+, [ "row-xhrp.67vz.7qbk", "00000000-0000-0000-0AC6-3B4D65111440", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2011-08-01T00:00:00", "2011", "August", "N", "Final", "100600", "86900", "13700", "0.137" ]
+, [ "row-ksam_c2am.ufr9", "00000000-0000-0000-C46C-B62DF94DF338", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2012-08-01T00:00:00", "2012", "August", "N", "Final", "101100", "89000", "12100", "0.119" ]
+, [ "row-rrpm_535r-xmkd", "00000000-0000-0000-0625-110F829A82B8", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2013-08-01T00:00:00", "2013", "August", "N", "Final", "102800", "92600", "10200", "0.099" ]
+, [ "row-bbvn.8upj.9vxq", "00000000-0000-0000-5863-352ABC089C39", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2014-08-01T00:00:00", "2014", "August", "N", "Final", "100900", "92300", "8600", "0.086" ]
+, [ "row-j3ei_7bsu-yepi", "00000000-0000-0000-2698-3CFB04DA6756", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2015-08-01T00:00:00", "2015", "August", "N", "Final", "100800", "93800", "7000", "0.069" ]
+, [ "row-yam7~bfhf~8vs2", "00000000-0000-0000-A8CC-C5A11FE734A4", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2016-08-01T00:00:00", "2016", "August", "N", "Final", "101000", "94400", "6700", "0.066" ]
+, [ "row-pj62.k5g9_78yq", "00000000-0000-0000-201F-DD50AB4694FE", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2017-08-01T00:00:00", "2017", "August", "N", "Final", "101600", "95700", "6000", "0.059" ]
+, [ "row-27wv_dgv3~w5kw", "00000000-0000-0000-6F9D-39E515983275", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2018-08-01T00:00:00", "2018", "August", "N", "Final", "101600", "96700", "4900", "0.048" ]
+, [ "row-8rji.v9c7-hbm7", "00000000-0000-0000-EDF8-59075DEC6675", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2019-08-01T00:00:00", "2019", "August", "N", "Final", "101300", "96400", "4900", "0.048" ]
+, [ "row-7zq5_qvp7-miq7", "00000000-0000-0000-3560-EB860EBCA07E", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1990-09-01T00:00:00", "1990", "September", "N", "Final", "78900", "73200", "5700", "0.072" ]
+, [ "row-m6sj_5rny.gmtn", "00000000-0000-0000-6824-5304CC7F9E88", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1991-09-01T00:00:00", "1991", "September", "N", "Final", "79100", "72700", "6400", "0.081" ]
+, [ "row-aqjk_p32d.ysw8", "00000000-0000-0000-B4EC-7D09F2A43C81", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1992-09-01T00:00:00", "1992", "September", "N", "Final", "81900", "72600", "9300", "0.113" ]
+, [ "row-ag9t~sjgd-3kwe", "00000000-0000-0000-5E23-620B0A0518C2", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1993-09-01T00:00:00", "1993", "September", "N", "Final", "81800", "73200", "8500", "0.104" ]
+, [ "row-xnfd.aees~x5ia", "00000000-0000-0000-0DF5-8B6CF6B64076", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1994-09-01T00:00:00", "1994", "September", "N", "Final", "83800", "76700", "7100", "0.085" ]
+, [ "row-2pte-ndqc~2ygc", "00000000-0000-0000-AE7E-65F7807ABDF1", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1995-09-01T00:00:00", "1995", "September", "N", "Final", "82700", "75800", "6900", "0.084" ]
+, [ "row-wft6.vk7i-jbrq", "00000000-0000-0000-987D-6265C51C1393", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1996-09-01T00:00:00", "1996", "September", "N", "Final", "84300", "78300", "6000", "0.071" ]
+, [ "row-zpje~4ga3_yifc", "00000000-0000-0000-7F18-CFA501FB0987", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1997-09-01T00:00:00", "1997", "September", "N", "Final", "84700", "78500", "6200", "0.073" ]
+, [ "row-5qfb-ixdw_d8nt", "00000000-0000-0000-19F9-78EEBDC42F38", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1998-09-01T00:00:00", "1998", "September", "N", "Final", "86500", "80900", "5600", "0.065" ]
+, [ "row-8k93.vzfx-ckw4", "00000000-0000-0000-F2F1-D7D1CDCF7B87", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1999-09-01T00:00:00", "1999", "September", "N", "Final", "86200", "81700", "4600", "0.053" ]
+, [ "row-csu7.rc5w~jwrz", "00000000-0000-0000-3231-6E0FB2AE3B14", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2000-09-01T00:00:00", "2000", "September", "N", "Final", "93900", "89100", "4800", "0.052" ]
+, [ "row-a3ac_qk6b-4z6z", "00000000-0000-0000-C51E-79DED7DE7134", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2001-09-01T00:00:00", "2001", "September", "N", "Final", "96300", "90900", "5400", "0.056" ]
+, [ "row-c73b.9v5m.rbvs", "00000000-0000-0000-E7BD-EEB046630387", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2002-09-01T00:00:00", "2002", "September", "N", "Final", "97900", "91700", "6200", "0.063" ]
+, [ "row-duxh-mk3m_bdks", "00000000-0000-0000-D886-89D722A1E4FB", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2003-09-01T00:00:00", "2003", "September", "N", "Final", "98300", "91900", "6300", "0.064" ]
+, [ "row-z2ub-563k.6526", "00000000-0000-0000-0164-3CE93D3910D1", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2004-09-01T00:00:00", "2004", "September", "N", "Final", "97900", "92000", "5900", "0.06" ]
+, [ "row-nwyg-amm6-4u6p", "00000000-0000-0000-4DC4-D5FBF11751C2", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2005-09-01T00:00:00", "2005", "September", "N", "Final", "100000", "94000", "5900", "0.059" ]
+, [ "row-pyta.p49k-iewf", "00000000-0000-0000-99CC-5C9EDD757A56", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2006-09-01T00:00:00", "2006", "September", "N", "Final", "100900", "95700", "5300", "0.052" ]
+, [ "row-8bhi_j8gf.ccf9", "00000000-0000-0000-1623-8E17B84600B1", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2007-09-01T00:00:00", "2007", "September", "N", "Final", "101700", "95600", "6100", "0.06" ]
+, [ "row-5g83~46kz-hzhw", "00000000-0000-0000-F7F7-507F29DA3CCC", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2008-09-01T00:00:00", "2008", "September", "N", "Final", "103900", "95500", "8400", "0.081" ]
+, [ "row-4dk4-9ezv.57dk", "00000000-0000-0000-881F-FEAA2508AAC1", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2009-09-01T00:00:00", "2009", "September", "N", "Final", "102700", "90500", "12200", "0.119" ]
+, [ "row-nnzk_9zcm~p6pd", "00000000-0000-0000-A23E-A9B9FA7EE0C1", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2010-09-01T00:00:00", "2010", "September", "N", "Final", "101800", "88600", "13200", "0.13" ]
+, [ "row-jbry.u2hk_cjms", "00000000-0000-0000-BBFB-25903475D469", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2011-09-01T00:00:00", "2011", "September", "N", "Final", "100900", "87900", "13000", "0.129" ]
+, [ "row-vzhh.bnaw_7nr9", "00000000-0000-0000-8BD7-80E1B1170FAE", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2012-09-01T00:00:00", "2012", "September", "N", "Final", "100200", "89400", "10900", "0.108" ]
+, [ "row-tb6q.2n2p~xgxq", "00000000-0000-0000-68E9-2E077E1870E2", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2013-09-01T00:00:00", "2013", "September", "N", "Final", "101000", "91500", "9500", "0.094" ]
+, [ "row-vrac~gyfk.zqgj", "00000000-0000-0000-40CD-C9DD5D6BBF6F", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2014-09-01T00:00:00", "2014", "September", "N", "Final", "100800", "93100", "7600", "0.076" ]
+, [ "row-d7zm_9gzt-ch8k", "00000000-0000-0000-B305-771FD69224D7", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2015-09-01T00:00:00", "2015", "September", "N", "Final", "101200", "94900", "6300", "0.062" ]
+, [ "row-wqgc~a5wt.2upp", "00000000-0000-0000-762E-59E083E16132", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2016-09-01T00:00:00", "2016", "September", "N", "Final", "103200", "97000", "6200", "0.06" ]
+, [ "row-4wjr_nin5-wsmj", "00000000-0000-0000-FB40-86E7178B3008", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2017-09-01T00:00:00", "2017", "September", "N", "Final", "103800", "98700", "5000", "0.049" ]
+, [ "row-6m8s.9a78_2hxs", "00000000-0000-0000-B8DD-CA72E6B87254", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2018-09-01T00:00:00", "2018", "September", "N", "Final", "103500", "99300", "4300", "0.041" ]
+, [ "row-cxwu_axm3.2xpa", "00000000-0000-0000-6A98-44A3AAF26013", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2019-09-01T00:00:00", "2019", "September", "N", "Final", "103400", "99600", "3800", "0.037" ]
+, [ "row-y2qb.vzw6_pnad", "00000000-0000-0000-ED2F-4079D3600134", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1990-10-01T00:00:00", "1990", "October", "N", "Final", "80700", "75100", "5600", "0.07" ]
+, [ "row-m4aw_r7w2-vapv", "00000000-0000-0000-11B1-C2915899F596", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1991-10-01T00:00:00", "1991", "October", "N", "Final", "79200", "72600", "6600", "0.083" ]
+, [ "row-7iih_q265~vrux", "00000000-0000-0000-7E43-34A662BF0D34", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1992-10-01T00:00:00", "1992", "October", "N", "Final", "82300", "73900", "8400", "0.102" ]
+, [ "row-s3xf_dpj8_k5df", "00000000-0000-0000-9E87-057CCBBA2501", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1993-10-01T00:00:00", "1993", "October", "N", "Final", "82900", "74600", "8300", "0.1" ]
+, [ "row-skw8_a5cg~3adi", "00000000-0000-0000-5A1E-415764075DC4", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1994-10-01T00:00:00", "1994", "October", "N", "Final", "82900", "76000", "6900", "0.083" ]
+, [ "row-4j7c_zbz5-7x9g", "00000000-0000-0000-F711-1B15BF4EE20E", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1995-10-01T00:00:00", "1995", "October", "N", "Final", "82700", "76200", "6500", "0.079" ]
+, [ "row-xmx9-vc2v~m5c2", "00000000-0000-0000-F4BA-5A7A856DACF0", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1996-10-01T00:00:00", "1996", "October", "N", "Final", "84400", "78600", "5800", "0.069" ]
+, [ "row-xpi6~c7jq~4u3x", "00000000-0000-0000-6341-280BB292CE60", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1997-10-01T00:00:00", "1997", "October", "N", "Final", "85000", "79300", "5700", "0.067" ]
+, [ "row-hcqq~snf8-hx4a", "00000000-0000-0000-434D-A8A5FD359DAD", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1998-10-01T00:00:00", "1998", "October", "N", "Final", "86300", "80700", "5500", "0.064" ]
+, [ "row-jwte~4dzk-8bqf", "00000000-0000-0000-9893-1BD2AB9C0A6D", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1999-10-01T00:00:00", "1999", "October", "N", "Final", "86500", "82000", "4400", "0.051" ]
+, [ "row-uxud.288i~axhk", "00000000-0000-0000-7AC7-859B65FC03D1", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2000-10-01T00:00:00", "2000", "October", "N", "Final", "94400", "89500", "4900", "0.052" ]
+, [ "row-6mkp_etgd~rtgj", "00000000-0000-0000-4954-DC8C87A8FD16", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2001-10-01T00:00:00", "2001", "October", "N", "Final", "96200", "90500", "5600", "0.059" ]
+, [ "row-yqdg_c4xh-srm3", "00000000-0000-0000-D42F-AE0A4F2EE06E", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2002-10-01T00:00:00", "2002", "October", "N", "Final", "98200", "91900", "6300", "0.064" ]
+, [ "row-swvy-njgu_7p2r", "00000000-0000-0000-5624-BBD8C4607FD8", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2003-10-01T00:00:00", "2003", "October", "N", "Final", "98400", "92100", "6300", "0.064" ]
+, [ "row-8mbn~g33m-vsvz", "00000000-0000-0000-5553-9336EF918798", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2004-10-01T00:00:00", "2004", "October", "N", "Final", "97800", "91700", "6100", "0.063" ]
+, [ "row-rdh4~ei7e-e6jj", "00000000-0000-0000-68C5-A9A1AC4E0B55", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2005-10-01T00:00:00", "2005", "October", "N", "Final", "99700", "93900", "5800", "0.058" ]
+, [ "row-ju6z_fyyg.s4zv", "00000000-0000-0000-0ADB-A8CB40823677", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2006-10-01T00:00:00", "2006", "October", "N", "Final", "102300", "97300", "5100", "0.05" ]
+, [ "row-rap3~wy9z_hxtr", "00000000-0000-0000-0B4F-857211ECFC71", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2007-10-01T00:00:00", "2007", "October", "N", "Final", "101700", "95600", "6100", "0.06" ]
+, [ "row-nidn.twke.guqx", "00000000-0000-0000-8B98-E4865CD99EB9", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2008-10-01T00:00:00", "2008", "October", "N", "Final", "103500", "94600", "8800", "0.086" ]
+, [ "row-ca3k_6v4d.ic4c", "00000000-0000-0000-5EBD-3844DF0475A3", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2009-10-01T00:00:00", "2009", "October", "N", "Final", "103700", "91000", "12800", "0.123" ]
+, [ "row-rr9y_evvb~n6va", "00000000-0000-0000-A032-B12245AF328E", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2010-10-01T00:00:00", "2010", "October", "N", "Final", "104000", "90600", "13400", "0.129" ]
+, [ "row-jvvc~fr9f-hhqm", "00000000-0000-0000-4967-4D1BDE0EECAF", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2011-10-01T00:00:00", "2011", "October", "N", "Final", "100200", "87500", "12800", "0.127" ]
+, [ "row-ccjz.fdx5~mbhk", "00000000-0000-0000-8A59-2F4D6679E301", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2012-10-01T00:00:00", "2012", "October", "N", "Final", "101800", "90900", "10900", "0.107" ]
+, [ "row-a83s_8vcc~hevj", "00000000-0000-0000-3A1A-B77C1AF5670A", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2013-10-01T00:00:00", "2013", "October", "N", "Final", "102300", "92800", "9500", "0.093" ]
+, [ "row-aqmx~pwqr.4ftq", "00000000-0000-0000-0705-C1A0AC022612", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2014-10-01T00:00:00", "2014", "October", "N", "Final", "102400", "94800", "7600", "0.074" ]
+, [ "row-yuvj.p4up.vx57", "00000000-0000-0000-6219-FA0E3C85FCBC", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2015-10-01T00:00:00", "2015", "October", "N", "Final", "101900", "95600", "6300", "0.062" ]
+, [ "row-ykmi-23ds~mvu6", "00000000-0000-0000-FF2F-1A282DB1990A", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2016-10-01T00:00:00", "2016", "October", "N", "Final", "103100", "97000", "6100", "0.059" ]
+, [ "row-tu93.t36e-w8cr", "00000000-0000-0000-6592-EDCE5C65097F", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2017-10-01T00:00:00", "2017", "October", "N", "Final", "103100", "98200", "4900", "0.047" ]
+, [ "row-nng7-qn43_4mcb", "00000000-0000-0000-FEE9-5B26C3BB3A6A", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2018-10-01T00:00:00", "2018", "October", "N", "Final", "104900", "100500", "4400", "0.042" ]
+, [ "row-ktz8.tbgy-78sf", "00000000-0000-0000-5053-8F9A9AC278D0", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2019-10-01T00:00:00", "2019", "October", "N", "Preliminary", "104400", "100400", "4000", "0.038" ]
+, [ "row-ny3e.imu2_b95m", "00000000-0000-0000-4B86-CAD6334FD41B", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1990-11-01T00:00:00", "1990", "November", "N", "Final", "80200", "73300", "6900", "0.085" ]
+, [ "row-g664.q395.438m", "00000000-0000-0000-C05C-B26556C53356", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1991-11-01T00:00:00", "1991", "November", "N", "Final", "79400", "72400", "7000", "0.089" ]
+, [ "row-zijf_9zdu-e2xj", "00000000-0000-0000-653D-9D7E16C937D9", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1992-11-01T00:00:00", "1992", "November", "N", "Final", "81800", "72500", "9300", "0.113" ]
+, [ "row-3szk-4ur3.5d65", "00000000-0000-0000-8DB6-71A3A7020FCA", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1993-11-01T00:00:00", "1993", "November", "N", "Final", "82400", "74200", "8200", "0.099" ]
+, [ "row-as96-ivnw~kx4c", "00000000-0000-0000-8E13-A5279DA5BADF", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1994-11-01T00:00:00", "1994", "November", "N", "Final", "83500", "76000", "7400", "0.089" ]
+, [ "row-39wg~sws3.7vig", "00000000-0000-0000-0D7A-3441054E0C78", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1995-11-01T00:00:00", "1995", "November", "N", "Final", "82600", "75400", "7200", "0.087" ]
+, [ "row-dq7w~zuth.f7dr", "00000000-0000-0000-50B1-E8AE37DA1042", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1996-11-01T00:00:00", "1996", "November", "N", "Final", "84800", "77900", "6800", "0.081" ]
+, [ "row-vxqn-i98z-q85u", "00000000-0000-0000-3039-433E92D178A5", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1997-11-01T00:00:00", "1997", "November", "N", "Final", "84400", "77700", "6700", "0.079" ]
+, [ "row-5gsh~fex7-rfff", "00000000-0000-0000-A13E-9EC9E92A0C40", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1998-11-01T00:00:00", "1998", "November", "N", "Final", "86000", "80100", "5900", "0.068" ]
+, [ "row-zc96~zkbm_f3ib", "00000000-0000-0000-6900-CB8CF71EBDAD", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1999-11-01T00:00:00", "1999", "November", "N", "Final", "86500", "81600", "4900", "0.057" ]
+, [ "row-iqbv~wysy-bgdn", "00000000-0000-0000-9F00-48B7BB5873DC", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2000-11-01T00:00:00", "2000", "November", "N", "Final", "94600", "88900", "5700", "0.06" ]
+, [ "row-k6mx.beqj_vjc8", "00000000-0000-0000-4479-A5E18B3B9F0C", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2001-11-01T00:00:00", "2001", "November", "N", "Final", "96700", "90200", "6500", "0.067" ]
+, [ "row-fmb8~6q7x-triz", "00000000-0000-0000-ACCF-876864ECFF80", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2002-11-01T00:00:00", "2002", "November", "N", "Final", "97800", "90500", "7300", "0.074" ]
+, [ "row-7bzk.qgqw-xnp7", "00000000-0000-0000-1F51-D3D830A9C76F", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2003-11-01T00:00:00", "2003", "November", "N", "Final", "98600", "91400", "7200", "0.073" ]
+, [ "row-4x3u.8rkc~fd5w", "00000000-0000-0000-4DC6-DFE1A4C2E5B8", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2004-11-01T00:00:00", "2004", "November", "N", "Final", "98400", "91700", "6800", "0.069" ]
+, [ "row-6snh~fpte-ait9", "00000000-0000-0000-5314-6AB4F96CF8C3", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2005-11-01T00:00:00", "2005", "November", "N", "Final", "99200", "92900", "6300", "0.064" ]
+, [ "row-ipeh-vizr_ttu9", "00000000-0000-0000-4F2D-B4B2AB8AAA48", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2006-11-01T00:00:00", "2006", "November", "N", "Final", "102600", "96700", "5800", "0.057" ]
+, [ "row-tseb.vawz-9ew2", "00000000-0000-0000-36C5-B91B9813B364", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2007-11-01T00:00:00", "2007", "November", "N", "Final", "101800", "95200", "6700", "0.066" ]
+, [ "row-xuja-gv83.4gab", "00000000-0000-0000-6C21-06A24F3705A4", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2008-11-01T00:00:00", "2008", "November", "N", "Final", "103100", "93400", "9700", "0.094" ]
+, [ "row-kjp3-mvq5~9kbc", "00000000-0000-0000-698E-7D86CF53F81D", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2009-11-01T00:00:00", "2009", "November", "N", "Final", "104200", "91000", "13200", "0.127" ]
+, [ "row-4tkw.k8us-xfv3", "00000000-0000-0000-B705-06DD07C6A1AE", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2010-11-01T00:00:00", "2010", "November", "N", "Final", "103700", "89500", "14200", "0.137" ]
+, [ "row-2nen-7pzm.n9v7", "00000000-0000-0000-7595-9E43E5ECAACC", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2011-11-01T00:00:00", "2011", "November", "N", "Final", "100900", "88200", "12700", "0.126" ]
+, [ "row-g7jd.sjvh.62pm", "00000000-0000-0000-5C11-DEF6050533A1", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2012-11-01T00:00:00", "2012", "November", "N", "Final", "101000", "90100", "10900", "0.108" ]
+, [ "row-e923_z8m8~hev5", "00000000-0000-0000-D72B-095E4233B0EA", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2013-11-01T00:00:00", "2013", "November", "N", "Final", "101600", "92000", "9500", "0.094" ]
+, [ "row-e3tu-spy9.8ixh", "00000000-0000-0000-6327-9B8D0AD11CC9", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2014-11-01T00:00:00", "2014", "November", "N", "Final", "101300", "93400", "7900", "0.078" ]
+, [ "row-uzt5.548s_pepz", "00000000-0000-0000-E8C4-E53775344B20", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2015-11-01T00:00:00", "2015", "November", "N", "Final", "101200", "94400", "6700", "0.066" ]
+, [ "row-8qy4_t88a-mb9d", "00000000-0000-0000-69F6-C84ED4A86B7E", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2016-11-01T00:00:00", "2016", "November", "N", "Final", "102500", "96500", "6100", "0.059" ]
+, [ "row-phka_gxh8.kwkc", "00000000-0000-0000-C588-56271F4DD9BA", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2017-11-01T00:00:00", "2017", "November", "N", "Final", "102100", "97100", "5000", "0.049" ]
+, [ "row-4cpt.y35q.ahpe", "00000000-0000-0000-5578-0F8059092B8C", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2018-11-01T00:00:00", "2018", "November", "N", "Final", "103600", "99100", "4500", "0.043" ]
+, [ "row-xxwv_52h2.qein", "00000000-0000-0000-7341-3D9D63521EB2", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1990-12-01T00:00:00", "1990", "December", "N", "Final", "79400", "72300", "7100", "0.089" ]
+, [ "row-8kef-pu66.q343", "00000000-0000-0000-074C-566FE0E2E489", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1991-12-01T00:00:00", "1991", "December", "N", "Final", "79200", "71300", "7900", "0.1" ]
+, [ "row-fmjf.4a5t-fpa7", "00000000-0000-0000-68E2-8676B78FACBA", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1992-12-01T00:00:00", "1992", "December", "N", "Final", "81900", "71700", "10200", "0.125" ]
+, [ "row-jqa4-cj9i.zqqr", "00000000-0000-0000-207C-DF19769DE8F0", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1993-12-01T00:00:00", "1993", "December", "N", "Final", "81700", "73000", "8700", "0.106" ]
+, [ "row-b6fg~242i.be73", "00000000-0000-0000-0E28-91C34836C830", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1994-12-01T00:00:00", "1994", "December", "N", "Final", "82000", "74400", "7600", "0.093" ]
+, [ "row-nrcd_tqdh_fh9e", "00000000-0000-0000-84A4-22B6B0C5147F", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1995-12-01T00:00:00", "1995", "December", "N", "Final", "81200", "73900", "7300", "0.09" ]
+, [ "row-wduw_dpmj.yfzf", "00000000-0000-0000-9D33-59FCFE916C65", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1996-12-01T00:00:00", "1996", "December", "N", "Final", "83500", "76400", "7000", "0.084" ]
+, [ "row-ep8f_6h8y.i52h", "00000000-0000-0000-19EC-2950D43A2354", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1997-12-01T00:00:00", "1997", "December", "N", "Final", "83900", "77200", "6800", "0.081" ]
+, [ "row-75pz-gs8x.84ix", "00000000-0000-0000-AB81-2C9392D82B06", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1998-12-01T00:00:00", "1998", "December", "N", "Final", "86000", "79900", "6100", "0.071" ]
+, [ "row-q55i_9m3z_3h4x", "00000000-0000-0000-9058-DC1B874C14CF", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "1999-12-01T00:00:00", "1999", "December", "N", "Final", "86400", "81100", "5300", "0.061" ]
+, [ "row-xmrq~35eq_pmhw", "00000000-0000-0000-DA46-1A167EC65A4C", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2000-12-01T00:00:00", "2000", "December", "N", "Final", "94200", "88700", "5500", "0.058" ]
+, [ "row-4wj3_ka5s-rhsp", "00000000-0000-0000-7099-421632E51541", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2001-12-01T00:00:00", "2001", "December", "N", "Final", "96700", "89900", "6900", "0.071" ]
+, [ "row-64hk~egf9-3c5g", "00000000-0000-0000-2934-79190D121A72", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2002-12-01T00:00:00", "2002", "December", "N", "Final", "97300", "90100", "7300", "0.075" ]
+, [ "row-vr32.vxqg.yxsr", "00000000-0000-0000-E366-F2DE7AB2D368", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2003-12-01T00:00:00", "2003", "December", "N", "Final", "97300", "90000", "7300", "0.075" ]
+, [ "row-wwv7~7s37-qer5", "00000000-0000-0000-ECD0-416D8024D788", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2004-12-01T00:00:00", "2004", "December", "N", "Final", "97500", "90700", "6800", "0.069" ]
+, [ "row-6de8.pqfz.dcgf", "00000000-0000-0000-530F-84C6497F878C", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2005-12-01T00:00:00", "2005", "December", "N", "Final", "98100", "92000", "6100", "0.062" ]
+, [ "row-ppnp.ntyg~cqh3", "00000000-0000-0000-2D0F-C96B185517DA", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2006-12-01T00:00:00", "2006", "December", "N", "Final", "100800", "94800", "6000", "0.059" ]
+, [ "row-mhkq-k8t5.q2ib", "00000000-0000-0000-D4B1-14B4B8D1BBCD", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2007-12-01T00:00:00", "2007", "December", "N", "Final", "101200", "93800", "7300", "0.072" ]
+, [ "row-xdjb_dw8p-xs5e", "00000000-0000-0000-7D46-438B6DCAC9DA", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2008-12-01T00:00:00", "2008", "December", "N", "Final", "103000", "92600", "10500", "0.102" ]
+, [ "row-eghi-283t_m2dq", "00000000-0000-0000-C2C2-A1D6A93ECABC", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2009-12-01T00:00:00", "2009", "December", "N", "Final", "103800", "90300", "13500", "0.13" ]
+, [ "row-wqwg-keky_u3c5", "00000000-0000-0000-5709-A0B7B013E03B", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2010-12-01T00:00:00", "2010", "December", "N", "Final", "101400", "87100", "14300", "0.141" ]
+, [ "row-5fnn~ka72_edye", "00000000-0000-0000-1C4E-0335032D9ED3", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2011-12-01T00:00:00", "2011", "December", "N", "Final", "100800", "87800", "13000", "0.129" ]
+, [ "row-ekku.ifb5~rrns", "00000000-0000-0000-6673-0BAEB7A50AF2", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2012-12-01T00:00:00", "2012", "December", "N", "Final", "101100", "89800", "11400", "0.112" ]
+, [ "row-du5a-gaex_7bi3", "00000000-0000-0000-0002-83B731BCBCBE", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2013-12-01T00:00:00", "2013", "December", "N", "Final", "100800", "91500", "9300", "0.092" ]
+, [ "row-jgbw.7p9v~ihd9", "00000000-0000-0000-57D3-1D2AC8B4595C", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2014-12-01T00:00:00", "2014", "December", "N", "Final", "100600", "92900", "7700", "0.077" ]
+, [ "row-arji.9f5h-pr3h", "00000000-0000-0000-F746-710547D25B15", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2015-12-01T00:00:00", "2015", "December", "N", "Final", "100900", "94000", "6800", "0.068" ]
+, [ "row-tqpq-nfwq-cbdg", "00000000-0000-0000-B5CE-BEE630E539EF", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2016-12-01T00:00:00", "2016", "December", "N", "Final", "101300", "94800", "6400", "0.063" ]
+, [ "row-mw6h-muys~8w76", "00000000-0000-0000-3FEA-D342710A8AB6", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2017-12-01T00:00:00", "2017", "December", "N", "Final", "101300", "96100", "5200", "0.052" ]
+, [ "row-7m5c~hkbi-9d6c", "00000000-0000-0000-514C-05A8618860C7", 0, 1574276785, null, 1574276785, null, "{ }", "County", "Butte County", "2018-12-01T00:00:00", "2018", "December", "N", "Final", "104100", "98600", "5600", "0.053" ]
+ ]
+}
