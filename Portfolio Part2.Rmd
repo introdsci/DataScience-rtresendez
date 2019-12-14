@@ -20,8 +20,8 @@ include("dplyr")
 include("knitr")
 include("caret")
 library("methods")
-#purl("Portfolio.Rmd", output = "part1.r")
-#source("part1.r")
+purl("Portfolio.Rmd", output = "part1.r")
+source("part1.r")
 ```
 
 ## Import New Datasets.
@@ -38,7 +38,7 @@ Education <- read_csv("https://raw.githubusercontent.com/introdsci/DataScience-r
 
 ## Data Cleanup.
 
-Here we want to comb through the data and ensure that our column names are neat organized, and unique. We will go ahead and rename only the columns whose names are seperated and longer than needed.
+Here we want to comb through the data and ensure that our column names are neat organized, and unique. We will go ahead and rename only the columns whose names are separated and longer than needed.
 ```{r}
 #First we will start with the Employment Dataset.
 colnames(Employment)[colnames(Employment) ==   "Area Type"] <- "Area_Type"
@@ -94,7 +94,7 @@ head(summary(Education))
 ## Data Manipulation and Models
 In this section we will go over a few different ideas for finding models that give us insightful information about our given datasets.
 
-First we want to look at the current trend of Employment and how it has changed over the years. This will give us a general idea of how not only population is changing but as well as if the labor force is rising. In addition, we want to make sure we are also looking at the Unemployment rate particularly because it gives us the raw values as a percentage which will be comparable regardless of labor force size.
+First, we want to look at the current trend of Employment and how it has changed over the years. This will give us a general idea of how not only population is changing but as well as if the labor force is rising. In addition, we want to make sure we are also looking at the Unemployment rate particularly because it gives us the raw values as a percentage which will be comparable regardless of labor force size.
 ```{r}
 
 ##Make a Graph that shows the growth of labor throughout the years as well as the rate
@@ -104,18 +104,18 @@ First we want to look at the current trend of Employment and how it has changed 
   P2
 ```
 
-The second graph we want to look at it is how the completion of degress has changed in Butte county throughout the years. This will give us an idea of how many people are following through with their education.
+The second graph we want to look at it is how the completion of degrees has changed in Butte county throughout the years. This will give us an idea of how many people are following through with their education.
 
 ```{r}
 
-##Make a graph that shows the change in completed degress regardless of CIP
+##Make a graph that shows the change in completed degrees regardless of CIP
 
 P3 <- ggplot(data=Education) + geom_point(aes(x=Year,y=Completions, color=Year))
 P3
 
 ```
 
-Finally we want to compare the results of these two models and see if there is anything that will lead us to believe that completion of degress has an effect on the employed labor force and if the labor force is also increasing with more educated people.
+Finally, we want to compare the results of these two models and see if there is anything that will lead us to believe that completion of degrees has an effect on the employed labor force and if the labor force is also increasing with more educated people.
 
 ```{r}
 model <- lm(data=Education, formula= Completions~Employment$Labor_Force+Employment$Unemployment+Employment$Unemployment_rt)
@@ -127,11 +127,11 @@ summary(prediction)
 
 
 ```
-Looking at the results of this prediction we can see that the resulting P value from our model does not lead us to believe that there is any correlation between the Completed number of degress and the current amount of people in the work force.
+Looking at the results of this prediction we can see that the resulting P value from our model does not lead us to believe that there is any correlation between the Completed number of degrees and the current amount of people in the work force.
 
-I believe that this result comes from some limitations of the data as well as limitations of knowledge. This data is very consice but it does not contain information that directly relates to population or other outside factors which will effect the amount of people working.
+I believe that this result comes from some limitations of the data as well as limitations of knowledge. This data is very concise but it does not contain information that directly relates to population or other outside factors which will affect the amount of people working.
 
-In addtion, this model on takes into account education and employment within Butte county. Since Butte county has two facilities for education it is not hard to believe that the numbers are skewed due to the fact that most educated individuals leave once they have completed their degree.
+In addition, this model on takes into account education and employment within Butte county. Since Butte county has two facilities for education it is not hard to believe that the numbers are skewed due to the fact that most educated individuals leave once they have completed their degree.
 
-Overall I believe that there may be underlying correlations that exists that need to be explored further. An idea of where to go next would be to look at other hot spots in the country and see what the education and population looks like for those areas and compare their ratios to other regions.
+Overall, I believe that there may be underlying correlations that exists that need to be explored further. An idea of where to go next would be to look at other hot spots in the country and see what the education and population looks like for those areas and compare their ratios to other regions.
 

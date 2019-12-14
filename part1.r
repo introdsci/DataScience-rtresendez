@@ -1,25 +1,4 @@
----
-title: "Reece's Portfolio Project"
-output:
-  html_document:
-    df_print: paged
----
-
-# Introduction
-
-Welcome to my assessment of changes in population, and education in different regions within the US. The reason I have chosen to look into this topic is to understand the underlying causes of city growth.
-
-  I would like to understand if there is a direct correlation between education of citizens and how that effects population growth. The information I have chosen to work with is from the Economic Research Services.
-
-  The data that is compiled is based on averaged amounts of data for each state and county within those states. This data is being pulled from three separate files which all maintain different types of data all relating to the same regions.
-
-  I acknowledge that there are limitations to this data when it comes to auxiliary factors like national events or nature disaster. I will be overcoming this issue by finding patterns and using a model which best represents the general trend of the data then cross referencing the anomalies with potential events that may have had an influence in that region. Another limitation is the scope of which this data contains. Due to inconsistencies we will only be making estimations between 2013 and 2017 to mitigate error due to policy chance for how the US government collected the data.
-
-# Importing Data
-
-The first thing we will need to do is collect our data and import it to view the raw data we will be manipulating. In addition, we will install all the needed libraries in advance which will make it easier to analyze the findings.
- 
-```{r}
+## -----------------------------------------------------------------------------
 
 suppressMessages(library(tidyverse))
 suppressMessages(library(dplyr))
@@ -35,13 +14,9 @@ unTidyEducationDF <- read.csv(
 unTidyUnemploymentDF <- read.csv(
   "https://raw.githubusercontent.com/introdsci/DataScience-rtresendez/master/datasets/Unemployment.csv")
  
-```
 
-# Tidying Data
 
-As to spare you from looking at the headache data frames, we have made I will explain what has currently been done. We have now stored the data into Data frames. unfortunately, due to a conversation error when making the CVS file, the column names did not properly migrate. This means we will be tidying up this data to make sure everything is looking nice.
-
-```{r}
+## -----------------------------------------------------------------------------
 
 colnames(unTidyEducationDF)[colnames(unTidyEducationDF) == "Educational.attainment.for.adults.age.25.and.older.for.the.U.S...States..and.counties..1970.2017"] <- "FIPS_Code"
 
@@ -61,27 +36,9 @@ colnames(unTidyEducationDF)[colnames(unTidyEducationDF) == "X.40"] <- "AADeg"
 
 colnames(unTidyEducationDF)[colnames(unTidyEducationDF) == "X.41"] <- "BD"
 
-```
 
-The code above is renaming all the old columns from the untidy dataset and renaming them so it will be easier to understand what we are dealing with. Here is a quick legend that explains each of those variables
 
-### Education Variable Description
-
-* FIPC_Code -- A unique code designed to acknowledge the differences in city based on location and population by designating one of 9 numbers from Metropolitan cities to rural isolated regions.
-* State -- US states or territories
-* County -- Subregion of all US territories
-* RUCC -- Rural-Urban continuum code
-* UCC -- Urban continuum code
-* LessHSD -- Peoples with less than a high school diploma
-* HSDOnly -- Peoples with only a high school diploma
-* AADeg -- Peoples with some college or an AA degree
-* BD -- Peoples with a bachelor’s degree or higher
-
----
-
-Now we will go the same process of the other two untidy datasets.
-
-```{r}
+## -----------------------------------------------------------------------------
 
 colnames(unTidyPopulationDF)[colnames(unTidyPopulationDF) == "Population.estimates.for.the.U.S...States..and.counties..2010.18..see.the.second.tab.in.this.workbook.for.variable.name.descriptions."] <- "FIPS"
 
@@ -123,17 +80,9 @@ colnames(unTidyPopulationDF)[colnames(unTidyPopulationDF) == "X.42"] <- "Deaths1
 
 colnames(unTidyPopulationDF)[colnames(unTidyPopulationDF) == "X.43"] <- "Deaths17"
 
-```
 
-The above code has a few of the same variables which are easily recognized. Below is a legend for all new variables in this data frame
 
-### Population variable Descriptions
-
-* PopEst13-17 -- These are the estimations of the current population between 2013 and 2017
-* Births13-167 -- These are the estimations for births between 2013 and 2017
-* Deaths13-17 -- These are the estimations of deaths between 2013 and 2017
-
-```{r}
+## -----------------------------------------------------------------------------
 colnames(unTidyUnemploymentDF)[colnames(unTidyUnemploymentDF) == "Unemployment.and.median.household.income.for.the.U.S...States..and.counties..2007.18"] <- "FIPS"
 
 colnames(unTidyUnemploymentDF)[colnames(unTidyUnemploymentDF) == "X"] <- "State"
@@ -186,27 +135,9 @@ colnames(unTidyUnemploymentDF)[colnames(unTidyUnemploymentDF) == "X.47"] <- "Une
 
 colnames(unTidyUnemploymentDF)[colnames(unTidyUnemploymentDF) == "X.48"] <- "UnempRt17"
 
-```
 
-### Education Variable Descriptions
 
-* Metro_Status -- Binary representation of whether a region is metro or not
-* Labor_Force13-17 -- Active amount of people working between 2013-2017
-* Employed13-17 -- Amount of people employed between 2013-2017
-* Unemployed -- Amount of people unemployed between 2013-2017
-* unEmpRt13-17 -- Unemployment rates between 2013-12017 per region
-
----
-
-Now that we have renamed all the variables, we will be using for now it is time to produce some tibbles which we will use for all data models in the future.
-
-We will be using a total of 3 tibbles: Education, Population, and Employment.
-
-Below is code that is going to populate our tibbles using the renamed columns from the untidy datasets
-
-Please note that below the tibble is an expression that simply removes the specified rows from the tibble. The reason this is in here is to make sure we do not have empty rows of data that does not mean anything.
-
-```{r}
+## -----------------------------------------------------------------------------
 
 Education <- tibble(FIPS = unTidyEducationDF$FIPS_Code,
                     State = unTidyEducationDF$State,
@@ -277,15 +208,9 @@ show(Education)
 show(Population)
                      
 
-```
 
-## Resolve Inconsistent or irrelevant Data
 
-Now that we have some nicer looking tibbles we can finish up the tidying process to ensure this data is ready to be manipulated. We will be filling in the blank spaces with 0 as they are categorical variables. Since 0 is an undefined category in this dataset we are going to define it for all broader regions like the whole US or whole states. 
-
-There is one exception to this change and that is the status of whether the area is metro or not, since the US and states don't have a given value, we will be replacing that value with NA.
-
-```{r}
+## -----------------------------------------------------------------------------
 Population$RUCC <- sub("^$", "0", Population$RUCC)
 Population$UCC <- sub("^$", "0", Population$UCC)
 
@@ -295,28 +220,4 @@ Employment$Metro_Status <- sub("^$", "NA", Employment$Metro_Status)
 
 Education$RUCC <- sub("^$", "0", Education$RUCC)
 Education$UCC <- sub("^$", "0", Education$UCC)
-```
-
-This has concluded our data Discovery and Preparation Stage. Below is a summary of what modifications have been made to create this now workable dataset.
-
-## Conclusion
-
-  
-We have created 3 Tibbles from data provided by Economic Research Services.
-
-The tibble for Population contains 20 variables. There are 3 unique categorical variables that define the dataset. Those are State, FIPS, and County. All other variables are continuous with respect to the given region. They contain information about current population and growth and decay from natural causes.
-
-The tibble for Employment contains 26 variables. Similar to the Population tibble they also have the same 3 unique categorical variables. The remaining variables for continuous with respect to their region. They contain information for employment status for citizens.
-
-The tibble for Education contains 9 variables. With the same 3 categorical variables they also have continuous data with respect to their region. They contain information on current education status within a given region.
-
----
-
-My hope is by the end of this project to answer the following questions:
-
-Is there a correlation between the percent of a population that is educated, and the growth of that Region?
-
-Does the Employment Rate of a region cause changes in population fluctuation, and does that effect the population of educated peoples in the area?
-
-Is there a reasonable trend that can be seen when comparing the labor force with peoples who have a higher level of education?
 

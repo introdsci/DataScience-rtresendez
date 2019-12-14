@@ -1,0 +1,161 @@
+---
+title: "Portfolio Part 3"
+output: html_document
+---
+
+```{r setup, echo=FALSE, message=FALSE, error=FALSE, warning=FALSE, results='hide'}
+include <- function(library_name){
+  if( !(library_name %in% installed.packages()) )
+    install.packages(library_name) 
+  library(library_name, character.only=TRUE)
+}
+include("tidyverse")
+include("dplyr")
+include("knitr")
+include("caret")
+library("methods")
+purl("Portfolio Part2.Rmd", output = "part2.r")
+source("part2.r")
+```
+
+In this project we will spend time reviewing our previous work and ironing out some of the details. We will first address all feedback provided through Github and then we will touch on the future of this project and the current conclusions.
+
+
+### Github Issue 1. Showing Tables
+
+In Part one of this project I failed to provide proper visualization for the changes that were made to the tables once they had been made tidy. I have gone ahead and updated this information which can be seen here.
+
+Lines: 265 - 267 show(Employment) show(Education) show(population)
+
+With this addition now the changes to the tables is visible.
+
+### Github Issue 2. Titles
+
+In Part one, I neglected the foundation of organization and did not include titles for each section of the project. The changes to this have been made so that my previous work is friendlier to follow and understand.
+
+Please refer to the previous part of this Project to see these changes.
+
+### Github Issue 3. Grammar and Jargon
+
+Throughout this project my excitement seems to be the cause of most of these errors. There were some minor spelling and grammatical errors which may have caused confusion when reviewing this project, I have gone ahead and took measures to ensure all spelling and grammatical issues are resolved.
+
+### Github Issue 4. Repeated Information
+
+It was noted through Github that there may have been some repeated data in Part one in regard to the information about Population, Employment, and Education in the State Category.
+
+To Elaborate, due to the way the data is arranged the numerical values at any given row are categorical as they are ratios based on that specific region, whether that be State or County. I have decided that this is best left as is so in future work this detail of the data can be preserved.
+
+### Github Issue 5. Column Description
+
+In part one of this project it was noted that the variable description for each Column was organized in a way that made finding information hard. I have gone ahead and made updates to this document with a nice title which helps separate the variable descriptions from the rest of the report.
+
+### Github Issue 6. Employment Table
+
+In this issue it was touched upon that the provided data is untidy due to the large number of columns for values per year. While I completely agree that this would not normally be tidy. Due to the structure of the data this type of shrink would not work for our data set.
+
+Since this data is categorical by nature that means that each year the estimate is taken the returned value is based on different numbers year by year. This means that we cannot assume that the values are equivalent. Instead we need to use them as estimations for sub region by year.
+
+### Github Issue 7. PURL Statement commented out
+
+This was a minor error on my part while testing the Project. I have gone ahead and updated that line of code to properly work.
+
+### Github Issue 8. No Naniar
+
+This Library was mentioned as not having any use in part 2 of this Project. This library was included as it was used in Part 1. However as the previous issue noted the PURL statement was not in effect meaning the library was in fact not being used. This has been updated.
+
+## Last Improvements
+
+In this section I want to take some time to go back to our first few data sets from part 1. I want to provide some additional visualization as well as a better interpretation of the data.
+
+I want to take the time explore the relationship in Population of Butte County and Employment to see if Employment has any correlation in population growth.
+
+First, I am going to create working variables which will hold all the data we will be using for this test.
+```{r emp}
+
+ButteEmployment <- Employment %>%
+                  filter(Year == 2013 | Year == 2014 | Year == 2015 | Year == 2016 | Year == 2017) %>%
+                  select(Year,Employment)
+
+ButteEmployment <- as.tibble(ButteEmployment)
+
+ButteEmployment$totalEmp[ButteEmployment$Year == 2013] <- sum(ButteEmployment$Employment[ButteEmployment$Year == 2013])
+ButteEmployment$totalEmp[ButteEmployment$Year == 2014] <- sum(ButteEmployment$Employment[ButteEmployment$Year == 2014])
+ButteEmployment$totalEmp[ButteEmployment$Year == 2015] <- sum(ButteEmployment$Employment[ButteEmployment$Year == 2015])
+ButteEmployment$totalEmp[ButteEmployment$Year == 2016] <- sum(ButteEmployment$Employment[ButteEmployment$Year == 2016])
+ButteEmployment$totalEmp[ButteEmployment$Year == 2017] <- sum(ButteEmployment$Employment[ButteEmployment$Year == 2017])
+
+ButteEmployment <- ButteEmployment[c(1:5),]
+show(ButteEmployment)
+
+
+years <- c(2013,2014,2015,2016,2017)
+
+G1 <- ggplot(data=ButteEmployment) + geom_point(aes(x= years, y=ButteEmployment$totalEmp, fill = ButteEmployment$Year))
+G1
+
+
+```
+
+Now we can go ahead and get our variables for Population ready to be compared with.
+
+```{r pop}
+
+ButtePop <- Population %>%
+                  filter(County == "Butte County" & State == "CA") %>%
+                  select(PopEst13,PopEst14,PopEst15,PopEst16,PopEst17)
+
+ButtePop <- as.tibble(ButtePop)
+
+ButtePop <- ButtePop %>% gather(Year, Population, 1:5)
+
+ButtePop$Year[ButtePop$Year == "PopEst13"] <- "2013"
+ButtePop$Year[ButtePop$Year == "PopEst14"] <- "2014"
+ButtePop$Year[ButtePop$Year == "PopEst15"] <- "2015"
+ButtePop$Year[ButtePop$Year == "PopEst16"] <- "2016"
+ButtePop$Year[ButtePop$Year == "PopEst17"] <- "2017"
+show(ButtePop)
+
+G2 <- ggplot(data=ButtePop) + geom_point((aes(x=ButtePop$Year, y= ButtePop$Population)))
+
+G2
+
+```
+
+Based on the graphs alone there appears to be a positive linear trend of the data. However, we need to do some additional tests to ensure that this is the case. Due to the small size of this sample the cross validation on this dataset will be rather simple in nature.
+
+```{r model}
+
+
+set.seed(123)
+typeof(ButtePop$Population)
+
+ButteEmployment$totalEmp <- as.numeric(ButteEmployment$totalEmp)
+ButtePop$Population <- gsub(",","",ButtePop$Population)
+ButtePop$Population <- as.numeric(ButtePop$Population)
+
+model <- lm(data=ButtePop, formula= Population~ButteEmployment$totalEmp)
+
+prediction <- predict(model)
+summary(model)
+
+summary(prediction)
+
+```
+
+### Model Conclusion
+
+Based on the finding from this model we can say that there is a correlation between the Population of Chico and the Employment in Chico. We can see this relevance by looking at the p value for this model. Since it is around 0.00103 this means that your prediction was pretty good, and there is in fact correlation.
+
+In the future the best way to operationalize this project is by using the interaction effect. From what I have gathered there are potentially a lot of variables that may be having an effect of the population of any region.
+
+A possible factor could be Crime and how that effects people's desire to live in a certain area. In addition, there are nature disasters as well as climate and local politics which may have an impact.
+
+Overall this project is a good start into the vastly complex job of analyzing human behavior and how that effects where we decide to settle down. In the future I would spend a lot more time looking into the negatives which may be causing population to grow slower.
+
+### Links to the full Documentation as well as the Previous Part of this Project
+
+[Link to Part one of the Project]()
+[Link to Part two of the Project](https://introdsci.github.io/DataScience-rtresendez/index.html)
+[Link to the main Github page](https://github.com/introdsci/DataScience-rtresendez)
+
+
