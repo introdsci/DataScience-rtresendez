@@ -155,7 +155,7 @@ Overall this project is a good start into the vastly complex job of analyzing hu
 ### Links to the full Documentation as well as the Previous Part of this Project
 
 * [Link to Part one of the Project](https://github.com/introdsci/DataScience-rtresendez/blob/gh-pages/part1.html)
-* [Link to Part two of the Project](https://github.com/introdsci/DataScience-rtresendez/blob/gh-pages/part2.htmll)
+* [Link to Part two of the Project](https://github.com/introdsci/DataScience-rtresendez/blob/gh-pages/part2.html)
 * [Link to the main Github page](https://github.com/introdsci/DataScience-rtresendez)
 
 

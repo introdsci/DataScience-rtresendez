@@ -9,8 +9,8 @@ include("dplyr")
 include("knitr")
 include("caret")
 library("methods")
-#purl("Portfolio.Rmd", output = "part1.r")
-#source("part1.r")
+purl("Portfolio.Rmd", output = "part1.r")
+source("part1.r")
 
 
 ## ----echo=TRUE, message=FALSE, error=FALSE, warning=FALSE, results='hide'-----
